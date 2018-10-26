@@ -5,6 +5,10 @@ target 'ridex' do
   rn_path = '../node_modules/react-native'
   rn_maps_path = '../node_modules/react-native-maps'
 
+  # Required by RNFirebase
+  pod 'Firebase/Core', '~> 5.9.0'
+  pod 'GoogleAppMeasurement', '~> 5.2.0'
+  
   # See http://facebook.github.io/react-native/docs/integration-with-existing-apps.html#configuring-cocoapods-dependencies
   pod 'yoga', path: "#{rn_path}/ReactCommon/yoga/yoga.podspec"
   pod 'React', path: rn_path, subspecs: [

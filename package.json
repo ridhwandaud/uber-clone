@@ -9,6 +9,7 @@
   "dependencies": {
     "react": "16.6.0-alpha.8af6728",
     "react-native": "0.57.3",
+    "react-native-firebase": "^5.0.0",
     "react-native-maps": "^0.22.0",
     "react-navigation": "^2.18.1",
     "react-redux": "^5.0.7",
@@ -19,10 +20,10 @@
   },
   "devDependencies": {
     "babel-jest": "23.6.0",
+    "babel-plugin-module-resolver": "^3.1.1",
     "jest": "23.6.0",
     "metro-react-native-babel-preset": "0.48.1",
-    "react-test-renderer": "16.6.0-alpha.8af6728",
-    "babel-plugin-module-resolver": "^3.1.1"
+    "react-test-renderer": "16.6.0-alpha.8af6728"
   },
   "jest": {
     "preset": "react-native"
