@@ -8,7 +8,7 @@ import {
   Text,
   StatusBar
 } from 'react-native';
-import MapView from 'react-native-maps';
+import MapView, { PROVIDER_GOOGLE }  from 'react-native-maps';
 
 class Home extends Component {
   render() {
@@ -19,6 +19,7 @@ class Home extends Component {
 	            	backgroundColor="#2b2b2b"
 	          	/>
 	      		 	<MapView
+	      		 		provider={PROVIDER_GOOGLE}
 	      		 		style={styles.map}
 		            	initialRegion={{
 		              		latitude: 37.78825,
