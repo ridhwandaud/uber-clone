@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
-import { View, Text, TouchableOpacity } from 'react-native';
+import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
 import { connect } from 'react-redux';
 import loginActions from 'actions/loginActions';
 import { bindActionCreators } from 'redux';
+import MapView, { PROVIDER_GOOGLE }  from 'react-native-maps';
+
 
 class HomeScreen extends Component {
 
@@ -17,11 +19,18 @@ class HomeScreen extends Component {
 		const { LoginReducer, loginActionsCreator } = this.props;
 		console.log('LoginReducer', LoginReducer);
 		return(
-			<View>
-				<Text>
-					HomeScreen
-				</Text>	
-				<TouchableOpacity
+			<View style={{ flex: 1 }}>
+				<MapView
+      		 		provider={PROVIDER_GOOGLE}
+      		 		style={styles.map}
+	            	initialRegion={{
+	              		latitude: 37.78825,
+	              		longitude: -122.4324,
+	              		latitudeDelta: 0.0922,
+	              		longitudeDelta: 0.0421,
+	            	}}
+          		/>
+          		<TouchableOpacity
 					onPress={() => this.logout()}
 				>
 					<Text>
@@ -32,6 +41,12 @@ class HomeScreen extends Component {
 		)
 	}
 }
+
+const styles = StyleSheet.create({
+	map: {
+   		...StyleSheet.absoluteFillObject,
+  	},
+});
 
 const mapStateToProps = ({ LoginReducer }) => ({
 	LoginReducer,
