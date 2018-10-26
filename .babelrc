@@ -1,3 +1,19 @@
 {
-  "presets": ["module:metro-react-native-babel-preset"]
+  "presets": ["module:metro-react-native-babel-preset"],
+  "plugins": [
+		[
+			"module-resolver",
+			{
+				"cwd": "babelrc",
+				"alias": {
+					"app": "./src",
+					"router": "./src/router",
+					"actions": "./src/_actions",
+					"reducers": "./src/_reducers",
+					"store": "./src/store",
+					"containers": "./src/containers"
+				}
+			}
+		]
+	]
 }
