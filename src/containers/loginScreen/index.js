@@ -11,10 +11,18 @@ class LoginScreen extends Component {
 		header: null,
 	};
 
+
+	constructor(props) {
+    	super(props);
+    	this.state = { email: '', password: '' };
+  	}
+
 	login = () => {
 		const { loginActionsCreator } = this.props;
-		
+		const { email, password } = this.state;
 		loginActionsCreator.login();
+
+		console.log('email: ' + email + ' password: ' + password );
 
 		firebase.auth().signInAnonymously()
 		  .then(({ user }) => {
@@ -50,11 +58,16 @@ class LoginScreen extends Component {
 						style={{ marginTop: 16, padding: 16, height: 48, borderRadius: 6, borderWidth: 1, borderColor: '#CED0D2', alignSelf: 'stretch' }}
 						underlineColorAndroid='transparent'
 						placeholder="Email"
+						onChangeText={(email) => this.setState({email})}
+        				value={this.state.email}
 					/>
 					<TextInput 
 						style={{ marginTop: 16, padding: 16, height: 48, borderRadius: 6, borderWidth: 1, borderColor: '#CED0D2', alignSelf: 'stretch' }}
 						underlineColorAndroid='transparent'
+						secureTextEntry={true}
 						placeholder="Password"
+						onChangeText={(password) => this.setState({password})}
+        				value={this.state.password}
 					/>
 					<Text style={{ marginTop: 16, color: '#606470', fontSize: 16, fontFamily: 'System' , alignSelf: 'flex-end' }}>
 						Forgot password?
