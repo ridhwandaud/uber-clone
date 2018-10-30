@@ -10,9 +10,15 @@ class HomeScreen extends Component {
 
 	logout = () => {
 		const { loginActionsCreator, navigation } = this.props;
-		loginActionsCreator.logout()
+		loginActions.logout()
 
 		this.props.navigation.navigate('Auth');
+	}
+
+	componentDidMount(){
+		const { locationActions } = this.props;
+
+		locationActions.getCurrentLocation();
 	}
 
 	render(){
@@ -54,7 +60,8 @@ const mapStateToProps = ({ LoginReducer }) => ({
 
 const mapDispatchToProps = (dispatch) => {
 	return {
-		loginActionsCreator: bindActionCreators(loginActions, dispatch)
+		loginActions: bindActionCreators(loginActions, dispatch),
+		locationActions: bindActionCreators(locationActions, dispatch),
 	};
 };
 

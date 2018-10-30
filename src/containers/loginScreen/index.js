@@ -3,7 +3,7 @@ import { View, Text, TouchableOpacity, StyleSheet, KeyboardAvoidingView, ScrollV
 import { connect } from 'react-redux';
 import loginActions from 'actions/loginActions';
 import { bindActionCreators } from 'redux';
-import firebase from 'react-native-firebase';
+//import firebase from 'react-native-firebase';
 
 class LoginScreen extends Component {
 
@@ -15,13 +15,13 @@ class LoginScreen extends Component {
 		const { loginActionsCreator } = this.props;
 		
 		loginActionsCreator.login();
-
-		firebase.auth().signInAnonymously()
-		  .then(({ user }) => {
-		    console.log(user.isAnonymous);
-		    console.log('user',user);
-		    this.props.navigation.navigate('App');
-  		});
+		this.props.navigation.navigate('App');
+		// firebase.auth().signInAnonymously()
+		//   .then(({ user }) => {
+		//     console.log(user.isAnonymous);
+		//     console.log('user',user);
+		//     this.props.navigation.navigate('App');
+  // 		});
 
 		
 
