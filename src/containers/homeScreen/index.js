@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
 import { connect } from 'react-redux';
 import loginActions from 'actions/loginActions';
+import locationActions from 'actions/locationActions';
 import { bindActionCreators } from 'redux';
 import MapView, { PROVIDER_GOOGLE }  from 'react-native-maps';
 
