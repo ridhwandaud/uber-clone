@@ -1,3 +1,5 @@
+import types from 'actions/types';
+
 const INITIAL_STATE = { 
 	currentLocation: null,
 	pickupPoint: null,
@@ -7,16 +9,11 @@ const INITIAL_STATE = {
 export default (state = INITIAL_STATE, action) => {
 	const { type, payload } = action;
 	switch (type) {	
-		case 'login':
+		case types.REQUEST_CURRENT_LOCATION_SUCCESS:
 			return {
 				...state,
-				isLoggedIn: true,
-			};
-		case 'logout':
-			return {
-				...state,
-				isLoggedIn: false,
-			};		
+				currentLocation: payload.coords,
+			};	
 		default:
 		  return state;
 	}

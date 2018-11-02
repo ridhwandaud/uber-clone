@@ -39,7 +39,7 @@
 		5A3565EED1E9C0357D93F886 /* libPods-ridex-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E94145E74BBFD05FBABD978B /* libPods-ridex-tvOSTests.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
-		BDA836B12183380600A3E769 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BDA836B02183380500A3E769 /* GoogleService-Info.plist */; };
+		BDCA1EA4218C785300B84022 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BDCA1EA3218C785300B84022 /* GoogleService-Info.plist */; };
 		BDFFC4CB12ED4D4C964460CF /* libRNFirebase.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CFBAAE790E314E5F9A8AEF79 /* libRNFirebase.a */; };
 		CF35A31CB8D80B99628B2436 /* libPods-ridex-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 66A764BCDCFDCD0F4B0C15DF /* libPods-ridex-tvOS.a */; };
 		CF496FCEC9C3B049CD39EB14 /* libPods-ridex.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B9CC4F44BDD66D9FB6223A4 /* libPods-ridex.a */; };
@@ -361,7 +361,7 @@
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
 		8B9CC4F44BDD66D9FB6223A4 /* libPods-ridex.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ridex.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTBlob.xcodeproj; path = "../node_modules/react-native/Libraries/Blob/RCTBlob.xcodeproj"; sourceTree = "<group>"; };
-		BDA836B02183380500A3E769 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Desktop/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		BDCA1EA3218C785300B84022 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "ridex/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C07871596A3B4E07848EDA77 /* RNFirebase.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNFirebase.xcodeproj; path = "../node_modules/react-native-firebase/ios/RNFirebase.xcodeproj"; sourceTree = "<group>"; };
 		CA17623195B439697AD6E528 /* Pods-ridex-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ridex-tvOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ridex-tvOSTests/Pods-ridex-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		CFBAAE790E314E5F9A8AEF79 /* libRNFirebase.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNFirebase.a; sourceTree = "<group>"; };
@@ -509,7 +509,7 @@
 		13B07FAE1A68108700A75B9A /* ridex */ = {
 			isa = PBXGroup;
 			children = (
-				BDA836B02183380500A3E769 /* GoogleService-Info.plist */,
+				BDCA1EA3218C785300B84022 /* GoogleService-Info.plist */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
@@ -1131,7 +1131,7 @@
 			files = (
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
-				BDA836B12183380600A3E769 /* GoogleService-Info.plist in Resources */,
+				BDCA1EA4218C785300B84022 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

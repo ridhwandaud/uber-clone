@@ -23,20 +23,25 @@ class HomeScreen extends Component {
 	}
 
 	render(){
-		const { LoginReducer, loginActionsCreator } = this.props;
-		console.log('LoginReducer', LoginReducer);
+		const { LocationReducer, loginActionsCreator } = this.props;
+		console.log('LocationReducer', LocationReducer);
 		return(
 			<View style={{ flex: 1 }}>
-				<MapView
-      		 		provider={PROVIDER_GOOGLE}
-      		 		style={styles.map}
-	            	initialRegion={{
-	              		latitude: 37.78825,
-	              		longitude: -122.4324,
-	              		latitudeDelta: 0.0922,
-	              		longitudeDelta: 0.0421,
-	            	}}
-          		/>
+				{
+					LocationReducer.currentLocation &&
+
+					<MapView
+	      		 		provider={PROVIDER_GOOGLE}
+	      		 		style={styles.map}
+		            	initialRegion={{
+		              		latitude: LocationReducer.currentLocation.latitude,
+		              		longitude: LocationReducer.currentLocation.longitude,
+		              		latitudeDelta: 0.0922,
+		              		longitudeDelta: 0.0421,
+		            	}}
+	          		/>
+				}
+				
           		<TouchableOpacity
 					onPress={() => this.logout()}
 				>
@@ -55,8 +60,8 @@ const styles = StyleSheet.create({
   	},
 });
 
-const mapStateToProps = ({ LoginReducer }) => ({
-	LoginReducer,
+const mapStateToProps = ({ LocationReducer }) => ({
+	LocationReducer,
 });
 
 const mapDispatchToProps = (dispatch) => {
