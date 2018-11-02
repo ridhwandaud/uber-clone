@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import loginActions from 'actions/loginActions';
 import locationActions from 'actions/locationActions';
 import { bindActionCreators } from 'redux';
-import MapView, { PROVIDER_GOOGLE }  from 'react-native-maps';
+import MapView, { Marker, PROVIDER_GOOGLE }  from 'react-native-maps';
 
 
 class HomeScreen extends Component {
@@ -39,7 +39,9 @@ class HomeScreen extends Component {
 		              		latitudeDelta: 0.0922,
 		              		longitudeDelta: 0.0421,
 		            	}}
-	          		/>
+	          		>
+	          			<Marker coordinate={LocationReducer.currentLocation} />
+	          		</MapView>
 				}
 				
           		<TouchableOpacity
