@@ -51,6 +51,7 @@ const requestSignup = (email, password, name, mobile, successCallback, callbackE
 
 
 const logout = () => {
+	firebase.auth().signOut();
 	return {
 		type: 'logout'
 	}

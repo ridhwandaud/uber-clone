@@ -7,18 +7,36 @@ import {
   View,
 } from 'react-native';
 import { connect } from 'react-redux';
+import firebase from 'react-native-firebase';
 
 class AuthLoadingScreen extends React.Component {
   constructor(props) {
     super(props);
+    this.unsubscriber = null;
+    this.state = { isLoggedIn: false };
   }
 
   componentDidMount(){
     const { LoginReducer } = this.props;
 
-    loggedIn = LoginReducer.isLoggedIn;
+    this.unsubscriber = firebase.auth().onAuthStateChanged((user) => {
 
-    this.props.navigation.navigate(loggedIn ? 'App' : 'Auth');
+      if (user) {
+        console.log('user already isLoggedIn');
+        this.props.navigation.navigate('App');
+      } else {
+        console.log('user not loggedIn');
+        this.props.navigation.navigate('Auth');
+      }
+    });
+
+    
+  }
+
+  componentWillUnmount() {
+    if (this.unsubscriber) {
+      this.unsubscriber();
+    }
   }
 
   render() {
