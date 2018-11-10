@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import { View, Text, TouchableOpacity, StyleSheet, KeyboardAvoidingView, ScrollView, Image, TextInput, Alert, ActivityIndicator } from 'react-native';
+import { View, Text, TouchableOpacity, StyleSheet, KeyboardAvoidingView, ScrollView, Image, TextInput } from 'react-native';
 import { connect } from 'react-redux';
 import loginActions from 'actions/loginActions';
 import { bindActionCreators } from 'redux';
 import firebase from 'react-native-firebase';
 
-class LoginScreen extends Component {
+class SignupScreen extends Component {
 
 	static navigationOptions = {
 		header: null,
@@ -14,17 +14,29 @@ class LoginScreen extends Component {
 
 	constructor(props) {
     	super(props);
-    	this.state = { email: '', password: '' };
+    	this.state = { email: '', password: '', name: '', mobile: '' };
   	}
 
 	login = () => {
 		const { loginActionsCreator } = this.props;
-		const { email, password } = this.state;
-		loginActionsCreator.requestLogin(email, password, () =>{
+		const { email, password, name, mobile } = this.state;
+
+		loginActionsCreator.requestSignup(email, password, name, mobile, () =>{
 			this.props.navigation.navigate('App');
 		}, (error)=> {
 			Alert.alert(error.code);
 		});
+
+		console.log('email: ' + email + ' password: ' + password );
+
+		firebase.auth().signInAnonymously()
+		  .then(({ user }) => {
+		    console.log(user.isAnonymous);
+		    console.log('user',user);
+		    this.props.navigation.navigate('App');
+  		});
+		
+		console.log('login');
 	}
 
 	render(){
@@ -33,23 +45,32 @@ class LoginScreen extends Component {
 		return(
 			<KeyboardAvoidingView style={{ flex: 1, backgroundColor: 'white' }}>
 				<ScrollView style={{ padding: 20 }}>
-					<Image
-			          source={require('../../images/logo.png')}
-			          style={styles.logo}
-			        />
-			        <View style={{ paddingTop: 32, alignItems: 'center' }}>
+			        <View style={{ paddingTop: 62, alignItems: 'center' }}>
 				        <Text style={styles.title}>
-				        	Welcome Back!
+				        	Welcome Aboard!
 				        </Text>
 				        <Text style={styles.subTitle}>
-				        	Login to continue using mCycle
+				        	Signup with Ridex in simple steps
 				        </Text>
 			        </View>
+			        <TextInput 
+						style={{ marginTop: 16, padding: 16, height: 48, borderRadius: 6, borderWidth: 1, borderColor: '#CED0D2', alignSelf: 'stretch' }}
+						underlineColorAndroid='transparent'
+						placeholder="Name"
+						onChangeText={(name) => this.setState({name})}
+        				value={this.state.name}
+					/>
+					<TextInput 
+						style={{ marginTop: 16, padding: 16, height: 48, borderRadius: 6, borderWidth: 1, borderColor: '#CED0D2', alignSelf: 'stretch' }}
+						underlineColorAndroid='transparent'
+						placeholder="Phone Number"
+						onChangeText={(mobile) => this.setState({mobile})}
+        				value={this.state.mobile}
+					/>
 					<TextInput 
 						style={{ marginTop: 16, padding: 16, height: 48, borderRadius: 6, borderWidth: 1, borderColor: '#CED0D2', alignSelf: 'stretch' }}
 						underlineColorAndroid='transparent'
 						placeholder="Email"
-						autoCapitalize='none'
 						onChangeText={(email) => this.setState({email})}
         				value={this.state.email}
 					/>
@@ -61,37 +82,25 @@ class LoginScreen extends Component {
 						onChangeText={(password) => this.setState({password})}
         				value={this.state.password}
 					/>
-					<Text style={{ marginTop: 16, color: '#606470', fontSize: 16, fontFamily: 'System' , alignSelf: 'flex-end' }}>
-						Forgot password?
-					</Text>
 					<View style={{ marginTop: 32, alignSelf: 'stretch', }}>
 						<TouchableOpacity
 							style={styles.login}
 							onPress={() => this.login()}
-						>	
-							{
-								LoginReducer.isLoading ?
-
-								<ActivityIndicator size="small" color="white" />
-
-								:
-
-								<Text style={styles.loginText}>
-									Log In
-								</Text>
-							}
-							
+						>
+							<Text style={styles.loginText}>
+								Log In
+							</Text>
 						</TouchableOpacity>
 					</View>
 					<TouchableOpacity
-						style={{ flexDirection: 'row', padding: 20, paddingHorizontal: 30 }}
-						onPress={() => this.props.navigation.navigate('Signup')}
+						style={{ flexDirection: 'row', padding: 20, paddingHorizontal: 30, alignSelf: 'center' }}
+						onPress={() => this.props.navigation.navigate('Login')}
 					>
 						<Text style={styles.newUser}>
-							New User? 
+							Already a User?
 						</Text>
 						<Text style={styles.signUp}>
-							Sign up for a new account
+							Login now
 						</Text>
 					</TouchableOpacity>
 				</ScrollView>
@@ -102,8 +111,8 @@ class LoginScreen extends Component {
 
 const styles = StyleSheet.create({
     logo: {
-        width: 150,
-        height: 150,
+        width: 100,
+        height: 100,
         alignSelf: 'center',
         marginTop: 32,
     },
@@ -151,5 +160,5 @@ const mapDispatchToProps = (dispatch) => {
 	};
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(LoginScreen);
+export default connect(mapStateToProps, mapDispatchToProps)(SignupScreen);
 		

@@ -10,7 +10,7 @@ import MapView, { PROVIDER_GOOGLE }  from 'react-native-maps';
 class HomeScreen extends Component {
 
 	logout = () => {
-		const { loginActionsCreator, navigation } = this.props;
+		const { loginActions, navigation } = this.props;
 		loginActions.logout()
 
 		this.props.navigation.navigate('Auth');

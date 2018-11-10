@@ -3,7 +3,8 @@ import types from './types';
 const getCurrentLocation = (successCallback) => {
 	return (dispatch, getState) => {
 
-
+		console.log('getCurrentLocation');
+		
 		navigator.geolocation.getCurrentPosition((position) => {
 			dispatch({
 				type: types.REQUEST_CURRENT_LOCATION_SUCCESS,
