@@ -5,6 +5,9 @@ import loginActions from 'actions/loginActions';
 import locationActions from 'actions/locationActions';
 import { bindActionCreators } from 'redux';
 import MapView, { Marker, PROVIDER_GOOGLE }  from 'react-native-maps';
+import MapViewDirections from 'react-native-maps-directions';
+
+const GOOGLE_MAPS_APIKEY = 'AIzaSyCQoJg9aiTcFCVk32s1Yh7Xn4Nqelu_XeY';
 
 const { width } = Dimensions.get('window');
 
@@ -62,6 +65,14 @@ class HomeScreen extends Component {
 					      	coordinate={LocationReducer.currentLocation}
 					      	title="Current Location"
 					    />
+					    {
+					    	LocationReducer.dropOffLatLong &&
+					    	<MapViewDirections
+					    		origin={LocationReducer.currentLocation}
+							    destination={LocationReducer.dropOffLatLong}
+							    apikey={GOOGLE_MAPS_APIKEY}
+						  	/>
+						}
 	          		</MapView>
 				}
 				
@@ -90,17 +101,17 @@ class HomeScreen extends Component {
 	  				</TouchableOpacity>
   				</View>
   				<TouchableOpacity
-  	  					activeOpacity={0.85}
-  	  					onPress={()=> console.log('unlock')}
-  	  					style={styles.buttonBook}
-  	  					onPress={() => this.chooseDropOffPoint()}
-  	  				>
-  	  					<Text
-  	  						style={styles.buttonBottomText}
-  	  					>
-  	  						Choose your destination
-  	  					</Text>
-	  				 </TouchableOpacity>
+  					activeOpacity={0.85}
+  					onPress={()=> console.log('unlock')}
+  					style={styles.buttonBook}
+  					onPress={() => this.chooseDropOffPoint()}
+  				>
+  					<Text
+  						style={styles.buttonBottomText}
+  					>
+  						Choose your destination
+  					</Text>
+  				</TouchableOpacity>
 			</View>
 		)
 	}

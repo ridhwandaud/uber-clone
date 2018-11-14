@@ -4,6 +4,7 @@ const INITIAL_STATE = {
 	currentLocation: null,
 	pickupPoint: 'Enter a pick-up point',
 	dropOffPoint: 'Where to ?',
+	dropOffLatLong: null,
 };
 
 export default (state = INITIAL_STATE, action) => {
@@ -23,6 +24,10 @@ export default (state = INITIAL_STATE, action) => {
 			return {
 				...state,
 				dropOffPoint: payload.name,
+				dropOffLatLong: {
+					latitude: payload.geometry.location.lat,
+					longitude: payload.geometry.location.lng,
+				},
 			}	
 		default:
 		  return state;
