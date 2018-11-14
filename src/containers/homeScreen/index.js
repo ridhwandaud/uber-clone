@@ -38,7 +38,7 @@ class HomeScreen extends Component {
 		const { LocationReducer, loginActionsCreator } = this.props;
 		console.log('LocationReducer', LocationReducer);
 		return(
-			<View style={{ flex: 1 }}>
+			<View style={styles.container}>
 				{
 					LocationReducer.currentLocation &&
 
@@ -79,16 +79,32 @@ class HomeScreen extends Component {
 	  					<Text
 	  						style={styles.buttonText}
 	  					>
-	  						{this.state.dropOffName}
+	  						{LocationReducer.dropOffPoint}
 	  					</Text>
 	  				</TouchableOpacity>
   				</View>
+  				<TouchableOpacity
+  	  					activeOpacity={0.85}
+  	  					onPress={()=> console.log('unlock')}
+  	  					style={styles.buttonBook}
+  	  					onPress={() => this.openLocationScreen()}
+  	  				>
+  	  					<Text
+  	  						style={styles.buttonBottomText}
+  	  					>
+  	  						Choose your destination
+  	  					</Text>
+	  				 </TouchableOpacity>
 			</View>
 		)
 	}
 }
 
 const styles = StyleSheet.create({
+	container: {
+    	...StyleSheet.absoluteFillObject,
+    	justifyContent: 'space-between',
+  	},
 	map: {
    		...StyleSheet.absoluteFillObject,
   	},
@@ -96,15 +112,41 @@ const styles = StyleSheet.create({
 	  	backgroundColor: 'white',
 	  	width: width - 40,
 	  	padding: 15,
-	  	marginTop: 20,
+	  	marginTop: 85,
 	  	marginHorizontal: 20,
 	  	elevation: 2,
 	  	borderRadius: 2,
 	  	borderBottomRightRadius: 0,
 	  	borderBottomLeftRadius: 0,
   	},
+  	buttonDropoff: {
+	  	marginTop: 10,
+	  	backgroundColor: 'white',
+	  	width: width - 40,
+	  	padding: 15,
+	  	marginHorizontal: 20,
+	  	elevation: 2,
+	  	borderRadius: 2,
+	  	borderTopRightRadius: 0,
+	  	borderTopLeftRadius: 0,
+  	},
   	buttonText: {
   		color: 'grey',
+  		fontFamily: 'System',
+  	},
+  	buttonBook:{
+	    backgroundColor: '#3277D8',
+	    alignSelf: 'flex-end',
+	    width: width,
+	    padding: 15,
+	    elevation: 2,
+	    marginTop: 10,
+  	},
+  	buttonBottomText: {
+	    fontFamily: 'System',
+	  	color: 'white',
+	  	textAlign: 'center',
+	    fontSize: 18,
   	},
 });
 

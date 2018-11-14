@@ -3,7 +3,7 @@ import types from 'actions/types';
 const INITIAL_STATE = { 
 	currentLocation: null,
 	pickupPoint: 'Enter a pick-up point',
-	dropOffPoint: null,
+	dropOffPoint: 'Where to ?',
 };
 
 export default (state = INITIAL_STATE, action) => {
