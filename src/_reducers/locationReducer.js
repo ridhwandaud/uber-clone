@@ -19,6 +19,11 @@ export default (state = INITIAL_STATE, action) => {
 				...state,
 				pickupPoint: payload[0].streetName,
 			};
+		case types.SET_LOCATION_SUCCESS:
+			return {
+				...state,
+				dropOffPoint: payload.name,
+			}	
 		default:
 		  return state;
 	}

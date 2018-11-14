@@ -34,6 +34,12 @@ class HomeScreen extends Component {
 		locationActions.getCurrentLocation();
 	}
 
+	chooseDropOffPoint = () => {
+		const { navigation } = this.props;
+
+		navigation.navigate('Location');
+	}
+
 	render(){
 		const { LocationReducer, loginActionsCreator } = this.props;
 		console.log('LocationReducer', LocationReducer);
@@ -63,7 +69,7 @@ class HomeScreen extends Component {
 	  				<TouchableOpacity
 	  					activeOpacity={0.85}
 	  					style={styles.buttonPickup}
-	  					onPress={() => this.openSearchPickupModal()}
+	  					onPress={() => this.chooseDropOffPoint()}
 	  				>
 	  					<Text
 	  						style={styles.buttonText}
@@ -74,7 +80,7 @@ class HomeScreen extends Component {
 					<TouchableOpacity
 						activeOpacity={0.85}
 	  					style={styles.buttonDropoff}
-	  					onPress={() => this.openSearchDropOffModal()}
+	  					onPress={() => this.chooseDropOffPoint()}
 	  				>
 	  					<Text
 	  						style={styles.buttonText}
@@ -87,7 +93,7 @@ class HomeScreen extends Component {
   	  					activeOpacity={0.85}
   	  					onPress={()=> console.log('unlock')}
   	  					style={styles.buttonBook}
-  	  					onPress={() => this.openLocationScreen()}
+  	  					onPress={() => this.chooseDropOffPoint()}
   	  				>
   	  					<Text
   	  						style={styles.buttonBottomText}

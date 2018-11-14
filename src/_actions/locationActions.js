@@ -49,6 +49,18 @@ const getCurrentLocation = (successCallback) => {
 	};
 };
 
+const setLocation = (location, successCallback) => {
+	return (dispatch, getState) => {
+		dispatch({
+			type: types.SET_LOCATION_SUCCESS,
+			payload: location
+		});
+
+		successCallback && successCallback();
+	}
+};
+
 export default {
-	getCurrentLocation
+	getCurrentLocation,
+	setLocation
 }
