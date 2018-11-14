@@ -43,6 +43,7 @@
 		BDFFC4CB12ED4D4C964460CF /* libRNFirebase.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CFBAAE790E314E5F9A8AEF79 /* libRNFirebase.a */; };
 		CF35A31CB8D80B99628B2436 /* libPods-ridex-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 66A764BCDCFDCD0F4B0C15DF /* libPods-ridex-tvOS.a */; };
 		CF496FCEC9C3B049CD39EB14 /* libPods-ridex.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B9CC4F44BDD66D9FB6223A4 /* libPods-ridex.a */; };
+		EFA6DE82219C3FED003D2830 /* libRNGeocoder.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EFA6DE81219C3FD7003D2830 /* libRNGeocoder.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -326,6 +327,13 @@
 			remoteGlobalIDString = 134814201AA4EA6300B7C361;
 			remoteInfo = RNFirebase;
 		};
+		EFA6DE80219C3FD7003D2830 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EFA6DE56219C3FD7003D2830 /* RNGeocoder.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BF8FCF941BFFB184000FCD37;
+			remoteInfo = RNGeocoder;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -367,6 +375,7 @@
 		CFBAAE790E314E5F9A8AEF79 /* libRNFirebase.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNFirebase.a; sourceTree = "<group>"; };
 		DEAD2225213FA868D8191478 /* Pods-ridex-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ridex-tvOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ridex-tvOSTests/Pods-ridex-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E94145E74BBFD05FBABD978B /* libPods-ridex-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ridex-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFA6DE56219C3FD7003D2830 /* RNGeocoder.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RNGeocoder.xcodeproj; path = "../node_modules/react-native-geocoder-reborn/ios/RNGeocoder.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -382,6 +391,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFA6DE82219C3FED003D2830 /* libRNGeocoder.a in Frameworks */,
 				ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */,
 				11D1A2F320CAFA9E000508D9 /* libRCTAnimation.a in Frameworks */,
 				146834051AC3E58100842450 /* libReact.a in Frameworks */,
@@ -589,6 +599,7 @@
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				EFA6DE56219C3FD7003D2830 /* RNGeocoder.xcodeproj */,
 				5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */,
 				146833FF1AC3E56700842450 /* React.xcodeproj */,
 				00C302A71ABCB8CE00DB3ED1 /* RCTActionSheet.xcodeproj */,
@@ -663,6 +674,14 @@
 			isa = PBXGroup;
 			children = (
 				BDA836AA2183319400A3E769 /* libRNFirebase.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EFA6DE57219C3FD7003D2830 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EFA6DE81219C3FD7003D2830 /* libRNGeocoder.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -836,6 +855,10 @@
 				{
 					ProductGroup = BDA836A62183319400A3E769 /* Products */;
 					ProjectRef = C07871596A3B4E07848EDA77 /* RNFirebase.xcodeproj */;
+				},
+				{
+					ProductGroup = EFA6DE57219C3FD7003D2830 /* Products */;
+					ProjectRef = EFA6DE56219C3FD7003D2830 /* RNGeocoder.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -1113,6 +1136,13 @@
 			fileType = archive.ar;
 			path = libRNFirebase.a;
 			remoteRef = BDA836A92183319400A3E769 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		EFA6DE81219C3FD7003D2830 /* libRNGeocoder.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRNGeocoder.a;
+			remoteRef = EFA6DE80219C3FD7003D2830 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */

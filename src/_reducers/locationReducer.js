@@ -2,7 +2,7 @@ import types from 'actions/types';
 
 const INITIAL_STATE = { 
 	currentLocation: null,
-	pickupPoint: null,
+	pickupPoint: 'Enter a pick-up point',
 	dropOffPoint: null,
 };
 
@@ -13,7 +13,12 @@ export default (state = INITIAL_STATE, action) => {
 			return {
 				...state,
 				currentLocation: payload.coords,
-			};	
+			};
+		case types.REQUEST_SET_CURRENT_LOCATION_SUCCESS:
+			return {
+				...state,
+				pickupPoint: payload[0].streetName,
+			};
 		default:
 		  return state;
 	}

@@ -8,6 +8,7 @@ target 'ridex' do
   # Required by RNFirebase
   pod 'Firebase/Core', '~> 5.9.0'
   pod 'Firebase/Auth', '~> 5.9.0'
+  pod 'Firebase/Database', '~> 5.9.0'
   pod 'GoogleAppMeasurement', '~> 5.2.0'
   
   # See http://facebook.github.io/react-native/docs/integration-with-existing-apps.html#configuring-cocoapods-dependencies
@@ -42,6 +43,8 @@ target 'ridex' do
   pod 'react-native-google-maps', path: rn_maps_path  # Unomment this line if you want to support GoogleMaps on iOS
   pod 'GoogleMaps'  # Uncomment this line if you want to support GoogleMaps on iOS
   pod 'Google-Maps-iOS-Utils' # Uncomment this line if you want to support GoogleMaps on iOS
+  pod 'react-native-geocoder', :path => '../node_modules/react-native-geocoder-reborn'
+
 end
 
 post_install do |installer|

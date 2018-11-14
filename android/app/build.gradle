@@ -138,6 +138,7 @@ android {
 }
 
 dependencies {
+    compile project(':react-native-geocoder-reborn')
     // This should be here already
     implementation project(':react-native-firebase')
 
@@ -145,6 +146,7 @@ dependencies {
     implementation "com.google.android.gms:play-services-base:16.0.1"
     implementation "com.google.firebase:firebase-core:16.0.4"
     implementation "com.google.firebase:firebase-auth:16.0.4"
+    implementation "com.google.firebase:firebase-database:16.0.4"
     implementation ("com.google.android.gms:play-services-maps:+") {
       force = true;
     }
