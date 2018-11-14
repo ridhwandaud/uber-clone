@@ -73,6 +73,13 @@ class HomeScreen extends Component {
 							    apikey={GOOGLE_MAPS_APIKEY}
 						  	/>
 						}
+						{
+							LocationReducer.dropOffLatLong &&
+							<Marker
+					      		coordinate={LocationReducer.dropOffLatLong}
+					      		title="Destination"
+					    	/>
+						}
 	          		</MapView>
 				}
 				
@@ -129,7 +136,7 @@ const styles = StyleSheet.create({
 	  	backgroundColor: 'white',
 	  	width: width - 40,
 	  	padding: 15,
-	  	marginTop: 85,
+	  	marginTop: 20,
 	  	marginHorizontal: 20,
 	  	elevation: 2,
 	  	borderRadius: 2,
