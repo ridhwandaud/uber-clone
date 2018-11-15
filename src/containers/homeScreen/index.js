@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, Text, TouchableOpacity, StyleSheet, Dimensions } from 'react-native';
+import { View, Text, TouchableOpacity, StyleSheet, Dimensions, Platform } from 'react-native';
 import { connect } from 'react-redux';
 import loginActions from 'actions/loginActions';
 import locationActions from 'actions/locationActions';
@@ -107,18 +107,37 @@ class HomeScreen extends Component {
 	  					</Text>
 	  				</TouchableOpacity>
   				</View>
-  				<TouchableOpacity
-  					activeOpacity={0.85}
-  					onPress={()=> console.log('unlock')}
-  					style={styles.buttonBook}
-  					onPress={() => this.chooseDropOffPoint()}
-  				>
-  					<Text
-  						style={styles.buttonBottomText}
-  					>
-  						Choose your destination
-  					</Text>
-  				</TouchableOpacity>
+  				{
+					LocationReducer.dropOffLatLong ?
+
+					<TouchableOpacity
+	  					activeOpacity={0.85}
+	  					onPress={()=> console.log('unlock')}
+	  					style={styles.buttonBook}
+	  					onPress={() => this.chooseDropOffPoint()}
+	  				>
+	  					<Text
+	  						style={styles.buttonBottomText}
+	  					>
+	  						Confirm pickup
+	  					</Text>
+	  				</TouchableOpacity>
+
+					:
+
+	  				<TouchableOpacity
+	  					activeOpacity={0.85}
+	  					onPress={()=> console.log('unlock')}
+	  					style={styles.buttonBook}
+	  					onPress={() => this.chooseDropOffPoint()}
+	  				>
+	  					<Text
+	  						style={styles.buttonBottomText}
+	  					>
+	  						Choose your destination
+	  					</Text>
+	  				</TouchableOpacity>
+  				}
 			</View>
 		)
 	}
@@ -128,6 +147,14 @@ const styles = StyleSheet.create({
 	container: {
     	...StyleSheet.absoluteFillObject,
     	justifyContent: 'space-between',
+    	...Platform.select({
+	      ios: {
+	        marginTop: 60,
+	      },
+	      android: {
+	        marginTop: 0,
+	      },
+	    }),
   	},
 	map: {
    		...StyleSheet.absoluteFillObject,
