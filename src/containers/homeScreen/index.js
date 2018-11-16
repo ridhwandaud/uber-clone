@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, Text, TouchableOpacity, StyleSheet, Dimensions, Platform } from 'react-native';
+import { View, Text, TouchableOpacity, StyleSheet, Dimensions, Platform, Button } from 'react-native';
 import { connect } from 'react-redux';
 import loginActions from 'actions/loginActions';
 import locationActions from 'actions/locationActions';
@@ -13,16 +13,23 @@ const { width } = Dimensions.get('window');
 
 class HomeScreen extends Component {
 
+	static navigationOptions = {
+	    title: 'Home',
+	    headerLeft: (
+	      <Button
+	        onPress={() => alert('This is a button!')}
+	        title="="
+	        color="black"
+	      />
+	    ),
+	};
+
 	constructor(props) {
     	super(props);
     	this.state = {
           	pickUpName: 'Enter a pick-up point',
   		}
   	}
-
-  	static navigationOptions = {
-		title: 'Ridex',
-	};
 
 	logout = () => {
 		const { loginActions, navigation } = this.props;
