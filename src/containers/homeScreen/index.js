@@ -57,8 +57,8 @@ class HomeScreen extends Component {
 		            	initialRegion={{
 		              		latitude: LocationReducer.currentLocation.latitude,
 		              		longitude: LocationReducer.currentLocation.longitude,
-		              		latitudeDelta: 0.0922,
-		              		longitudeDelta: 0.0421,
+		              		latitudeDelta: 0.0082,
+		              		longitudeDelta: 0.0081,
 		            	}}
 	          		>
 	          			<Marker

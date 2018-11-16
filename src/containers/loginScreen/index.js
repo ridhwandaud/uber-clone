@@ -36,7 +36,7 @@ class LoginScreen extends Component {
 		});
 	}
 
-	_signIn = async () => {
+	_signInGoogle = async () => {
 	    try {
 			await GoogleSignin.hasPlayServices();
 			const data = await GoogleSignin.signIn();
@@ -47,7 +47,7 @@ class LoginScreen extends Component {
 			// login with credential
 			const currentUser = await firebase.auth().signInWithCredential(credential);
 
-			console.info(JSON.stringify(currentUser.user.toJSON()));
+			this.props.navigation.navigate('App');
 	    } catch (error) {
 			if (error.code === statusCodes.SIGN_IN_CANCELLED) {
 			// sign in was cancelled
@@ -71,7 +71,7 @@ class LoginScreen extends Component {
 		console.log('LoginReducer', LoginReducer);
 		return(
 			<KeyboardAvoidingView style={{ flex: 1, backgroundColor: 'white' }}>
-				<ScrollView style={{ padding: 20 }}>
+				<ScrollView style={{ padding: 20, flex: 1 }}>
 					<Image
 			          source={require('../../images/logo.png')}
 			          style={styles.logo}
@@ -127,7 +127,7 @@ class LoginScreen extends Component {
 						    style={{ width: 312, height: 48 }}
 						    size={GoogleSigninButton.Size.Wide}
 						    color={GoogleSigninButton.Color.Dark}
-						    onPress={this._signIn}
+						    onPress={this._signInGoogle}
 						    disabled={this.state.isSigninInProgress} 
 						/>
 					</View>
