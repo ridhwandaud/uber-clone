@@ -44,7 +44,7 @@ export default (state = INITIAL_STATE, action) => {
 				...state,
 				isLoading: false,
 			};			
-		case 'logout':
+		case types.REQUEST_LOGOUT_SUCCESS:
 			console.log('logout');
 			return {
 				...state,

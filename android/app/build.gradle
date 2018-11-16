@@ -138,6 +138,7 @@ android {
 }
 
 dependencies {
+    compile project(':react-native-vector-icons')
     implementation project(':react-native-google-signin')
     implementation project(':react-native-geocoder-reborn')
     // This should be here already

@@ -49,12 +49,18 @@ const requestSignup = (email, password, name, mobile, successCallback, callbackE
 	};
 };
 
+const requestLogoutSuccess = () => ({ type: types.REQUEST_LOGOUT_SUCCESS });
 
-const logout = () => {
-	firebase.auth().signOut();
-	return {
-		type: 'logout'
-	}
+const logout = (successCallback) => {
+	
+	return (dispatch, getState) => {
+
+		firebase.auth().signOut();
+
+		dispatch(requestLogoutSuccess());
+
+		successCallback && successCallback();
+	};
 }
 
 export default {

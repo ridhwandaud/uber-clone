@@ -46,6 +46,8 @@ target 'ridex' do
   #pod 'react-native-geocoder-reborn', :path => '../node_modules/react-native-geocoder-reborn'
 
   pod 'GoogleSignIn'
+
+  pod 'RNVectorIcons', :path => '../node_modules/react-native-vector-icons'
 end
 
 post_install do |installer|

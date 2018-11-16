@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
-import { View, Text, TouchableOpacity, StyleSheet, Dimensions, Platform, Button } from 'react-native';
+import { View, Text, TouchableOpacity, StyleSheet, Dimensions, Platform, Button, Alert } from 'react-native';
 import { connect } from 'react-redux';
 import loginActions from 'actions/loginActions';
 import locationActions from 'actions/locationActions';
 import { bindActionCreators } from 'redux';
 import MapView, { Marker, PROVIDER_GOOGLE }  from 'react-native-maps';
 import MapViewDirections from 'react-native-maps-directions';
+import Icon from 'react-native-vector-icons/FontAwesome';
 
 const GOOGLE_MAPS_APIKEY = 'AIzaSyCQoJg9aiTcFCVk32s1Yh7Xn4Nqelu_XeY';
 
@@ -13,16 +14,14 @@ const { width } = Dimensions.get('window');
 
 class HomeScreen extends Component {
 
-	static navigationOptions = {
+	static navigationOptions = ({navigation}) => ({
 	    title: 'Home',
 	    headerLeft: (
-	      <Button
-	        onPress={() => alert('This is a button!')}
-	        title="="
-	        color="black"
-	      />
+	    	<TouchableOpacity style={{ marginLeft: 10 }} onPress={()=> navigation.toggleDrawer()}>
+	      		<Icon name="bars" size={20} color="black" />
+	      	</TouchableOpacity>
 	    ),
-	};
+	});
 
 	constructor(props) {
     	super(props);
