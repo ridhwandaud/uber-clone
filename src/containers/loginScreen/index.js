@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import loginActions from 'actions/loginActions';
 import { bindActionCreators } from 'redux';
 import firebase from 'react-native-firebase';
+import { GoogleSignin, GoogleSigninButton, statusCodes } from 'react-native-google-signin';
 
 class LoginScreen extends Component {
 
@@ -17,6 +18,14 @@ class LoginScreen extends Component {
     	this.state = { email: '', password: '' };
   	}
 
+  	async componentDidMount() {
+    	this._configureGoogleSignIn();
+  	}
+
+  	_configureGoogleSignIn() {
+	    GoogleSignin.configure();
+	}
+
 	login = () => {
 		const { loginActionsCreator } = this.props;
 		const { email, password } = this.state;
@@ -27,12 +36,42 @@ class LoginScreen extends Component {
 		});
 	}
 
+	_signInGoogle = async () => {
+	    try {
+			await GoogleSignin.hasPlayServices();
+			const data = await GoogleSignin.signIn();
+
+			// create a new firebase credential with the token
+			const credential = firebase.auth.GoogleAuthProvider.credential(data.idToken, data.accessToken)
+
+			// login with credential
+			const currentUser = await firebase.auth().signInWithCredential(credential);
+
+			this.props.navigation.navigate('App');
+	    } catch (error) {
+			if (error.code === statusCodes.SIGN_IN_CANCELLED) {
+			// sign in was cancelled
+			Alert.alert('Cancelled');
+			} else if (error.code === statusCodes.IN_PROGRESS) {
+			// operation in progress already
+			Alert.alert('in progress');
+			} else if (error.code === statusCodes.PLAY_SERVICES_NOT_AVAILABLE) {
+			Alert.alert('play services not available or outdated');
+			} else {
+			Alert.alert('Something went wrong', error.toString());
+			this.setState({
+			  error,
+			});
+			}
+	    }
+	};
+
 	render(){
 		const { LoginReducer, loginActionsCreator } = this.props;
 		console.log('LoginReducer', LoginReducer);
 		return(
 			<KeyboardAvoidingView style={{ flex: 1, backgroundColor: 'white' }}>
-				<ScrollView style={{ padding: 20 }}>
+				<ScrollView style={{ padding: 20, flex: 1 }}>
 					<Image
 			          source={require('../../images/logo.png')}
 			          style={styles.logo}
@@ -42,7 +81,7 @@ class LoginScreen extends Component {
 				        	Welcome Back!
 				        </Text>
 				        <Text style={styles.subTitle}>
-				        	Login to continue using mCycle
+				        	Login to continue using Ridex
 				        </Text>
 			        </View>
 					<TextInput 
@@ -83,6 +122,15 @@ class LoginScreen extends Component {
 							
 						</TouchableOpacity>
 					</View>
+					<View style={styles.googleSignin}>
+						<GoogleSigninButton
+						    style={{ width: 312, height: 48 }}
+						    size={GoogleSigninButton.Size.Wide}
+						    color={GoogleSigninButton.Color.Dark}
+						    onPress={this._signInGoogle}
+						    disabled={this.state.isSigninInProgress} 
+						/>
+					</View>
 					<TouchableOpacity
 						style={{ flexDirection: 'row', padding: 20, paddingHorizontal: 30 }}
 						onPress={() => this.props.navigation.navigate('Signup')}
@@ -118,10 +166,12 @@ const styles = StyleSheet.create({
     	color: '#606470'
     },
     login: {
-    	paddingVertical: 16,
+    	paddingVertical: 10,
     	backgroundColor: '#3277D8',
     	borderColor: '#3277D8',
-    	borderRadius: 6,
+    	borderRadius: 2,
+    	width: 305,
+    	alignSelf: 'center',
     },
     loginText: {
     	textAlign: 'center',
@@ -138,6 +188,11 @@ const styles = StyleSheet.create({
     	fontSize: 16,
     	marginLeft: 8,
     	color: '#3277D8',
+    },
+    googleSignin: {
+    	marginTop: 10,
+    	justifyContent: 'center',
+    	alignItems: 'center',
     }
 });
 
