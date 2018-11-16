@@ -43,8 +43,9 @@ target 'ridex' do
   pod 'react-native-google-maps', path: rn_maps_path  # Unomment this line if you want to support GoogleMaps on iOS
   pod 'GoogleMaps'  # Uncomment this line if you want to support GoogleMaps on iOS
   pod 'Google-Maps-iOS-Utils' # Uncomment this line if you want to support GoogleMaps on iOS
-  pod 'react-native-geocoder', :path => '../node_modules/react-native-geocoder-reborn'
+  #pod 'react-native-geocoder-reborn', :path => '../node_modules/react-native-geocoder-reborn'
 
+  pod 'GoogleSignIn'
 end
 
 post_install do |installer|
