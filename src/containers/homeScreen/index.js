@@ -10,7 +10,7 @@ import Icon from 'react-native-vector-icons/FontAwesome';
 
 const GOOGLE_MAPS_APIKEY = 'AIzaSyCQoJg9aiTcFCVk32s1Yh7Xn4Nqelu_XeY';
 
-const { width } = Dimensions.get('window');
+const { width, height } = Dimensions.get('window');
 
 class HomeScreen extends Component {
 
@@ -67,6 +67,7 @@ class HomeScreen extends Component {
 	      		 		provider={PROVIDER_GOOGLE}
 	      		 		style={styles.map}
 	      		 		region={LocationReducer.region}
+	      		 		ref={c => this.mapView = c}
 		            	// initialRegion={{
 		             //  		latitude: LocationReducer.currentLocation.latitude,
 		             //  		longitude: LocationReducer.currentLocation.longitude,
@@ -76,22 +77,35 @@ class HomeScreen extends Component {
 	          		>
 	          			<Marker
 					      	coordinate={LocationReducer.currentLocation}
-					      	title="Current Location"
+					      	title="Pickup"
 					    />
-					    {
-					    	LocationReducer.dropOffLatLong &&
-					    	<MapViewDirections
-					    		origin={LocationReducer.currentLocation}
-							    destination={LocationReducer.dropOffLatLong}
-							    apikey={GOOGLE_MAPS_APIKEY}
-						  	/>
-						}
+					    
 						{
 							LocationReducer.dropOffLatLong &&
 							<Marker
 					      		coordinate={LocationReducer.dropOffLatLong}
 					      		title="Destination"
 					    	/>
+						}
+						{
+					    	LocationReducer.dropOffLatLong &&
+					    	<MapViewDirections
+					    		origin={LocationReducer.currentLocation}
+							    destination={LocationReducer.dropOffLatLong}
+							    apikey={GOOGLE_MAPS_APIKEY}
+							    strokeWidth={3}
+    							strokeColor="#3277D8"
+    							onReady={(result) => {
+					              this.mapView.fitToCoordinates(result.coordinates, {
+					                edgePadding: {
+					                  right: (width / 20),
+					                  bottom: (height / 20),
+					                  left: (width / 20),
+					                  top: (height / 20),
+					                }
+					              });
+					            }}
+						  	/>
 						}
 	          		</MapView>
 				}
