@@ -5,12 +5,12 @@ import locationActions from 'actions/locationActions';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 
-class LocationScreen extends Component {
+class PickupScreen extends Component {
 
-	selectLocation = (details) => {
+	selectPickup = (details) => {
 		const { navigation, locationActions } = this.props;
 
-		locationActions.setLocation(details, () => {
+		locationActions.setPickup(details, () => {
 			navigation.navigate('Home');
 		});
 	}
@@ -18,12 +18,12 @@ class LocationScreen extends Component {
 		return(
 			<View style={styles.container}>
 				<GooglePlacesAutocomplete
-					placeholder='Where to ?	'
+					placeholder='Pickup point'
 					minLength={2}
 					autoFocus={true}
 					returnKeyType={'default'}
 					fetchDetails={true}
-					onPress={(data, details = null) => this.selectLocation(details)}
+					onPress={(data, details = null) => this.selectPickup(details)}
 					query={{
 				        // available options: https://developers.google.com/places/web-service/autocomplete
 				        key: 'AIzaSyCQoJg9aiTcFCVk32s1Yh7Xn4Nqelu_XeY',
@@ -73,5 +73,5 @@ const mapDispatchToProps = (dispatch) => {
 	};
 };
 
-export default connect(null, mapDispatchToProps)(LocationScreen);
+export default connect(null, mapDispatchToProps)(PickupScreen);
 		

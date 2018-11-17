@@ -5,6 +5,7 @@ const INITIAL_STATE = {
 	pickupPoint: 'Enter a pick-up point',
 	dropOffPoint: 'Where to ?',
 	dropOffLatLong: null,
+	region: null,
 };
 
 export default (state = INITIAL_STATE, action) => {
@@ -28,7 +29,21 @@ export default (state = INITIAL_STATE, action) => {
 					latitude: payload.geometry.location.lat,
 					longitude: payload.geometry.location.lng,
 				},
-			}	
+			};
+		case types.SET_PICKUP_LOCATION_SUCCESS:
+			return {
+				...state,
+				pickupPoint: payload.name,
+				currentLocation: {
+					latitude: payload.geometry.location.lat,
+					longitude: payload.geometry.location.lng,
+				}
+			};
+		case types.SET_CURRENT_REGION_SUCCESS:
+			return {
+				...state,
+				region: payload,
+			};
 		default:
 		  return state;
 	}

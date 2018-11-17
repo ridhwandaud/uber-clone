@@ -43,10 +43,16 @@ class HomeScreen extends Component {
 		locationActions.getCurrentLocation();
 	}
 
+	choosePickupPoint = () => {
+		const { navigation } = this.props;
+
+		navigation.navigate('Pickup');
+	}
+
 	chooseDropOffPoint = () => {
 		const { navigation } = this.props;
 
-		navigation.navigate('Location');
+		navigation.navigate('Destination');
 	}
 
 	render(){
@@ -55,17 +61,18 @@ class HomeScreen extends Component {
 		return(
 			<View style={styles.container}>
 				{
-					LocationReducer.currentLocation &&
+					LocationReducer.region &&
 
 					<MapView
 	      		 		provider={PROVIDER_GOOGLE}
 	      		 		style={styles.map}
-		            	initialRegion={{
-		              		latitude: LocationReducer.currentLocation.latitude,
-		              		longitude: LocationReducer.currentLocation.longitude,
-		              		latitudeDelta: 0.0082,
-		              		longitudeDelta: 0.0081,
-		            	}}
+	      		 		region={LocationReducer.region}
+		            	// initialRegion={{
+		             //  		latitude: LocationReducer.currentLocation.latitude,
+		             //  		longitude: LocationReducer.currentLocation.longitude,
+		             //  		latitudeDelta: 0.0082,
+		             //  		longitudeDelta: 0.0081,
+		            	// }}
 	          		>
 	          			<Marker
 					      	coordinate={LocationReducer.currentLocation}
@@ -93,7 +100,7 @@ class HomeScreen extends Component {
 	  				<TouchableOpacity
 	  					activeOpacity={0.85}
 	  					style={styles.buttonPickup}
-	  					onPress={() => this.chooseDropOffPoint()}
+	  					onPress={() => this.choosePickupPoint()}
 	  				>
 	  					<Text
 	  						style={styles.buttonText}

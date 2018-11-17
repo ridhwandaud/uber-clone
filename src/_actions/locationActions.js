@@ -1,7 +1,7 @@
 import types from './types';
 import firebase from 'react-native-firebase';
 import Geocoder from 'react-native-geocoder-reborn';
-// Geocoder.fallbackToGoogle('AIzaSyCQoJg9aiTcFCVk32s1Yh7Xn4Nqelu_XeY);
+import { regionFrom } from 'config/helpers';
 
 const getCurrentLocation = (successCallback) => {
 
@@ -23,6 +23,18 @@ const getCurrentLocation = (successCallback) => {
 				lat: position.coords.latitude,
 				lng: position.coords.longitude
 			};
+
+			//set region
+			var region = regionFrom(
+	            position.coords.latitude, 
+	            position.coords.longitude, 
+	            position.coords.accuracy
+	        );
+
+	        dispatch({
+				type: types.SET_CURRENT_REGION_SUCCESS,
+				payload: region
+			});
 
 			Geocoder.geocodePosition(location).then(res => {
 			    // res is an Array of geocoding object (see below)
@@ -56,11 +68,51 @@ const setLocation = (location, successCallback) => {
 			payload: location
 		});
 
+		//set region
+		var region = regionFrom(
+            location.geometry.location.lat, 
+            location.geometry.location.lng,
+            10
+        );
+
+        console.log('region', region);
+
+        dispatch({
+			type: types.SET_CURRENT_REGION_SUCCESS,
+			payload: region
+		});
+
 		successCallback && successCallback();
 	}
 };
 
+const setPickup = (location, successCallback) => {
+	return (dispatch, getState) => {
+		dispatch({
+			type: types.SET_PICKUP_LOCATION_SUCCESS,
+			payload: location
+		});
+
+		//set region
+		var region = regionFrom(
+            location.geometry.location.lat, 
+            location.geometry.location.lng,
+            10
+        );
+
+        console.log('region', region);
+
+        dispatch({
+			type: types.SET_CURRENT_REGION_SUCCESS,
+			payload: region
+		});
+
+		successCallback && successCallback();
+	}
+}
+
 export default {
 	getCurrentLocation,
-	setLocation
+	setLocation,
+	setPickup
 }

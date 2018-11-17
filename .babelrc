@@ -11,7 +11,8 @@
 					"actions": "./src/_actions",
 					"reducers": "./src/_reducers",
 					"store": "./src/store",
-					"containers": "./src/containers"
+					"containers": "./src/containers",
+					"config": "./src/config"
 				}
 			}
 		]
