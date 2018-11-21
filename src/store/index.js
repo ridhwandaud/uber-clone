@@ -9,7 +9,8 @@ import thunk from 'redux-thunk';
 const persistConfig = {
   key: 'root',
   storage,
-  whitelist: ['LoginReducer']
+  whitelist: ['LoginReducer'],
+  timeout: 0
 }
 
 const persistedReducer = persistReducer(persistConfig, rootReducer)

@@ -3,8 +3,12 @@ package com.ridex;
 import android.app.Application;
 
 import com.facebook.react.ReactApplication;
+import com.oblador.vectoricons.VectorIconsPackage;
+import co.apptailor.googlesignin.RNGoogleSigninPackage;
+import com.devfd.RNGeocoder.RNGeocoderPackage;
 import io.invertase.firebase.RNFirebasePackage;
 import io.invertase.firebase.auth.RNFirebaseAuthPackage;
+import io.invertase.firebase.database.RNFirebaseDatabasePackage;
 import com.airbnb.android.react.maps.MapsPackage;
 import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
@@ -26,9 +30,13 @@ public class MainApplication extends Application implements ReactApplication {
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
           new MainReactPackage(),
+            new VectorIconsPackage(),
+            new RNGoogleSigninPackage(),
           new RNFirebasePackage(),
+          new MapsPackage(),
           new RNFirebaseAuthPackage(),
-          new MapsPackage()
+          new RNFirebaseDatabasePackage(),
+          new RNGeocoderPackage() 
       );
     }
 
