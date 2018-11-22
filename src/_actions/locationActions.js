@@ -68,6 +68,20 @@ const setLocation = (location, successCallback) => {
 			payload: location
 		});
 
+		//set region
+		var region = regionFrom(
+            location.geometry.location.lat, 
+            location.geometry.location.lng,
+            10
+        );
+
+        console.log('region', region);
+
+        dispatch({
+			type: types.SET_CURRENT_REGION_SUCCESS,
+			payload: region
+		});
+
 		successCallback && successCallback();
 	}
 };
@@ -77,6 +91,20 @@ const setPickup = (location, successCallback) => {
 		dispatch({
 			type: types.SET_PICKUP_LOCATION_SUCCESS,
 			payload: location
+		});
+
+		//set region
+		var region = regionFrom(
+            location.geometry.location.lat, 
+            location.geometry.location.lng,
+            10
+        );
+
+        console.log('region', region);
+
+        dispatch({
+			type: types.SET_CURRENT_REGION_SUCCESS,
+			payload: region
 		});
 
 		successCallback && successCallback();

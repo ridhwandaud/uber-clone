@@ -71,7 +71,7 @@ class LoginScreen extends Component {
 		console.log('LoginReducer', LoginReducer);
 		return(
 			<KeyboardAvoidingView style={{ flex: 1, backgroundColor: 'white' }}>
-				<ScrollView style={{ padding: 20, flex: 1 }}>
+				<ScrollView style={{ padding: 20, flex: 1, marginBottom: 20 }}>
 					<Image
 			          source={require('../../images/logo.png')}
 			          style={styles.logo}
