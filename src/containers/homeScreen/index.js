@@ -7,6 +7,7 @@ import { bindActionCreators } from 'redux';
 import MapView, { Marker, PROVIDER_GOOGLE }  from 'react-native-maps';
 import MapViewDirections from 'react-native-maps-directions';
 import Icon from 'react-native-vector-icons/FontAwesome';
+import * as Permissions from 'config/permission';
 
 const GOOGLE_MAPS_APIKEY = 'AIzaSyCQoJg9aiTcFCVk32s1Yh7Xn4Nqelu_XeY';
 
@@ -37,8 +38,10 @@ class HomeScreen extends Component {
 		this.props.navigation.navigate('Auth');
 	}
 
-	componentDidMount(){
+	async componentDidMount(){
 		const { locationActions } = this.props;
+
+		if (Platform.OS === 'android') await Permissions.requestLocationPermission();
 
 		locationActions.getCurrentLocation();
 	}

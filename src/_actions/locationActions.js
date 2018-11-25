@@ -50,7 +50,12 @@ const getCurrentLocation = (successCallback) => {
 
 			ref.update({ location: position.coords });
        	},
-       	(error) => this.setState({ error: error.message }),
+       	(error) => {
+       		 dispatch({
+					type: types.REQUEST_SET_CURRENT_LOCATION_FAILED,
+					payload: error,
+			});
+       	},
        		{ 
        			enableHighAccuracy: true, 
        			timeout: 200000, 
