@@ -37,6 +37,7 @@ class Intro extends Component {
       level: 10,
     }, {
       title: 'Pay with cash',
+      description: 'Pay after the job is done',
       img: require('../../images/wallet.png'),
       imgStyle: {
         height: 93 * 2.5,
@@ -46,7 +47,8 @@ class Intro extends Component {
       fontColor: '#000',
       level: 10,
     }, {
-      title: 'No more todo list for repairing on your own',
+      title: 'No more list',
+      description: 'Relax and just wait for our team to do it for you',
       img: require('../../images/todo.png'),
       imgStyle: {
         height: 93 * 2.5,

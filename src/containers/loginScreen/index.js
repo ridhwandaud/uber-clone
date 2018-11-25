@@ -100,9 +100,9 @@ class LoginScreen extends Component {
 						onChangeText={(password) => this.setState({password})}
         				value={this.state.password}
 					/>
-					<Text style={{ marginTop: 16, color: '#606470', fontSize: 16, fontFamily: 'System' , alignSelf: 'flex-end' }}>
+					{ /*<Text style={{ marginTop: 16, color: '#606470', fontSize: 16, fontFamily: 'System' , alignSelf: 'flex-end' }}>
 						Forgot password?
-					</Text>
+					</Text> */}
 					<View style={{ marginTop: 32, alignSelf: 'stretch', }}>
 						<TouchableOpacity
 							style={styles.login}
