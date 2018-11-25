@@ -99,9 +99,9 @@ class HomeScreen extends Component {
 					              this.mapView.fitToCoordinates(result.coordinates, {
 					                edgePadding: {
 					                  right: (width / 20),
-					                  bottom: (height / 20),
+					                  bottom: (height / 10),
 					                  left: (width / 20),
-					                  top: (height / 20),
+					                  top: (height / 4),
 					                }
 					              });
 					            }}
@@ -185,6 +185,7 @@ const styles = StyleSheet.create({
   	},
 	map: {
    		...StyleSheet.absoluteFillObject,
+   		marginBottom: 50,
   	},
   	buttonPickup: {
 	  	backgroundColor: 'white',
