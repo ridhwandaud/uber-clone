@@ -125,8 +125,8 @@ const styles = StyleSheet.create({
     },
     login: {
     	paddingVertical: 16,
-    	backgroundColor: '#3277D8',
-    	borderColor: '#3277D8',
+    	backgroundColor: '#f7c818',
+    	borderColor: '#f7c818',
     	borderRadius: 6,
     },
     loginText: {
