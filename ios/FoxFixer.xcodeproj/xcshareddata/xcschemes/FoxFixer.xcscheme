@@ -29,9 +29,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-               BuildableName = "ridex.app"
-               BlueprintName = "ridex"
-               ReferencedContainer = "container:ridex.xcodeproj">
+               BuildableName = "FoxFixer.app"
+               BlueprintName = "FoxFixer"
+               ReferencedContainer = "container:FoxFixer.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -43,9 +43,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "00E356ED1AD99517003FC87E"
-               BuildableName = "ridexTests.xctest"
-               BlueprintName = "ridexTests"
-               ReferencedContainer = "container:ridex.xcodeproj">
+               BuildableName = "FoxFixerTests.xctest"
+               BlueprintName = "FoxFixerTests"
+               ReferencedContainer = "container:FoxFixer.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -61,9 +61,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "00E356ED1AD99517003FC87E"
-               BuildableName = "ridexTests.xctest"
-               BlueprintName = "ridexTests"
-               ReferencedContainer = "container:ridex.xcodeproj">
+               BuildableName = "FoxFixerTests.xctest"
+               BlueprintName = "FoxFixerTests"
+               ReferencedContainer = "container:FoxFixer.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -71,9 +71,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "ridex.app"
-            BlueprintName = "ridex"
-            ReferencedContainer = "container:ridex.xcodeproj">
+            BuildableName = "FoxFixer.app"
+            BlueprintName = "FoxFixer"
+            ReferencedContainer = "container:FoxFixer.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -94,9 +94,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "ridex.app"
-            BlueprintName = "ridex"
-            ReferencedContainer = "container:ridex.xcodeproj">
+            BuildableName = "FoxFixer.app"
+            BlueprintName = "FoxFixer"
+            ReferencedContainer = "container:FoxFixer.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -113,9 +113,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "ridex.app"
-            BlueprintName = "ridex"
-            ReferencedContainer = "container:ridex.xcodeproj">
+            BuildableName = "FoxFixer.app"
+            BlueprintName = "FoxFixer"
+            ReferencedContainer = "container:FoxFixer.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

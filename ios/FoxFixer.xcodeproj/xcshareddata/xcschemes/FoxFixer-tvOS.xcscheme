@@ -29,9 +29,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2D02E47A1E0B4A5D006451C7"
-               BuildableName = "ridex-tvOS.app"
-               BlueprintName = "ridex-tvOS"
-               ReferencedContainer = "container:ridex.xcodeproj">
+               BuildableName = "FoxFixer-tvOS.app"
+               BlueprintName = "FoxFixer-tvOS"
+               ReferencedContainer = "container:FoxFixer.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -43,9 +43,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2D02E48F1E0B4A5D006451C7"
-               BuildableName = "ridex-tvOSTests.xctest"
-               BlueprintName = "ridex-tvOSTests"
-               ReferencedContainer = "container:ridex.xcodeproj">
+               BuildableName = "FoxFixer-tvOSTests.xctest"
+               BlueprintName = "FoxFixer-tvOSTests"
+               ReferencedContainer = "container:FoxFixer.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -61,9 +61,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2D02E48F1E0B4A5D006451C7"
-               BuildableName = "ridex-tvOSTests.xctest"
-               BlueprintName = "ridex-tvOSTests"
-               ReferencedContainer = "container:ridex.xcodeproj">
+               BuildableName = "FoxFixer-tvOSTests.xctest"
+               BlueprintName = "FoxFixer-tvOSTests"
+               ReferencedContainer = "container:FoxFixer.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -71,9 +71,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2D02E47A1E0B4A5D006451C7"
-            BuildableName = "ridex-tvOS.app"
-            BlueprintName = "ridex-tvOS"
-            ReferencedContainer = "container:ridex.xcodeproj">
+            BuildableName = "FoxFixer-tvOS.app"
+            BlueprintName = "FoxFixer-tvOS"
+            ReferencedContainer = "container:FoxFixer.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -94,9 +94,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2D02E47A1E0B4A5D006451C7"
-            BuildableName = "ridex-tvOS.app"
-            BlueprintName = "ridex-tvOS"
-            ReferencedContainer = "container:ridex.xcodeproj">
+            BuildableName = "FoxFixer-tvOS.app"
+            BlueprintName = "FoxFixer-tvOS"
+            ReferencedContainer = "container:FoxFixer.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -113,9 +113,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2D02E47A1E0B4A5D006451C7"
-            BuildableName = "ridex-tvOS.app"
-            BlueprintName = "ridex-tvOS"
-            ReferencedContainer = "container:ridex.xcodeproj">
+            BuildableName = "FoxFixer-tvOS.app"
+            BlueprintName = "FoxFixer-tvOS"
+            ReferencedContainer = "container:FoxFixer.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
