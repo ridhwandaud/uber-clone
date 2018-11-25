@@ -1,4 +1,4 @@
-package com.ridex;
+package com.foxfixer.app;
 
 import android.app.Application;
 

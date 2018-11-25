@@ -1,7 +1,7 @@
 # Uncomment the next line to define a global platform for your project
 # platform :ios, '9.0'
 
-target 'ridex' do
+target 'FoxFixer' do
   rn_path = '../node_modules/react-native'
   rn_maps_path = '../node_modules/react-native-maps'
 
@@ -63,13 +63,13 @@ post_install do |installer|
   end
 end
 
-target 'ridex-tvOS' do
+target 'FoxFixer-tvOS' do
   # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
   # use_frameworks!
 
-  # Pods for ridex-tvOS
+  # Pods for FoxFixer-tvOS
 
-  target 'ridex-tvOSTests' do
+  target 'FoxFixer-tvOSTests' do
     inherit! :search_paths
     # Pods for testing
   end

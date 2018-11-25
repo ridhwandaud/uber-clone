@@ -5,13 +5,14 @@
 	};
 	objectVersion = 46;
 	objects = {
+
 /* Begin PBXBuildFile section */
 		00C302E51ABCBA2D00DB3ED1 /* libRCTActionSheet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302AC1ABCB8CE00DB3ED1 /* libRCTActionSheet.a */; };
 		00C302E71ABCBA2D00DB3ED1 /* libRCTGeolocation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302BA1ABCB90400DB3ED1 /* libRCTGeolocation.a */; };
 		00C302E81ABCBA2D00DB3ED1 /* libRCTImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302C01ABCB91800DB3ED1 /* libRCTImage.a */; };
 		00C302E91ABCBA2D00DB3ED1 /* libRCTNetwork.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302DC1ABCB9D200DB3ED1 /* libRCTNetwork.a */; };
 		00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302E41ABCB9EE00DB3ED1 /* libRCTVibration.a */; };
-		00E356F31AD99517003FC87E /* ridexTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* ridexTests.m */; };
+		00E356F31AD99517003FC87E /* FoxFixerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* FoxFixerTests.m */; };
 		11D1A2F320CAFA9E000508D9 /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
 		133E29F31AD74F7200F7D852 /* libRCTLinking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 78C398B91ACF4ADC00677621 /* libRCTLinking.a */; };
 		139105C61AF99C1200B5F7CC /* libRCTSettings.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 139105C11AF99BAD00B5F7CC /* libRCTSettings.a */; };
@@ -22,6 +23,8 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		140ED2AC1D01E1AD002B40FF /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
 		146834051AC3E58100842450 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
+		15EAD25AE1A84DA28268C6C3 /* Foundation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 37D5F7E575D849D0B93259F7 /* Foundation.ttf */; };
+		1BE826022BC649C49961E6B1 /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4AD7A8C04B4A463C90F70DD5 /* Octicons.ttf */; };
 		2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
@@ -33,32 +36,30 @@
 		2D02E4C71E0B4AEC006451C7 /* libRCTText-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3E941DF850E9000B6D8A /* libRCTText-tvOS.a */; };
 		2D02E4C81E0B4AEC006451C7 /* libRCTWebSocket-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3E991DF850E9000B6D8A /* libRCTWebSocket-tvOS.a */; };
 		2D16E6881FA4F8E400B85C8A /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D16E6891FA4F8E400B85C8A /* libReact.a */; };
-		2DCD954D1E0B4F2C00145EB5 /* ridexTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* ridexTests.m */; };
+		2DCD954D1E0B4F2C00145EB5 /* FoxFixerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* FoxFixerTests.m */; };
 		2DF0FFEE2056DD460020B375 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3EA31DF850E9000B6D8A /* libReact.a */; };
-		5A3565EED1E9C0357D93F886 /* libPods-ridex-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E94145E74BBFD05FBABD978B /* libPods-ridex-tvOSTests.a */; };
-		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
-		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
-		BDCA1EA4218C785300B84022 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BDCA1EA3218C785300B84022 /* GoogleService-Info.plist */; };
-		BDFFC4CB12ED4D4C964460CF /* libRNFirebase.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CFBAAE790E314E5F9A8AEF79 /* libRNFirebase.a */; };
-		CF35A31CB8D80B99628B2436 /* libPods-ridex-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 66A764BCDCFDCD0F4B0C15DF /* libPods-ridex-tvOS.a */; };
-		CF496FCEC9C3B049CD39EB14 /* libPods-ridex.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B9CC4F44BDD66D9FB6223A4 /* libPods-ridex.a */; };
-		EF4BFC21219E39470022F44F /* libRNGoogleSignin.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EF4BFC20219E39360022F44F /* libRNGoogleSignin.a */; };
-		EFA6DE82219C3FED003D2830 /* libRNGeocoder.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EFA6DE81219C3FD7003D2830 /* libRNGeocoder.a */; };
-		ABDF3C9BBF56446D97357636 /* AntDesign.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DDF8A4851CAE4FC5B127EAEC /* AntDesign.ttf */; };
+		3BCA399BF62D4E7492D11701 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B473D4B1C65240A0B7BE8FBF /* FontAwesome.ttf */; };
+		484BD893CE2C4E8290871474 /* Feather.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1AD30D28201A4892B8EBF57C /* Feather.ttf */; };
+		5A3565EED1E9C0357D93F886 /* libPods-FoxFixer-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E94145E74BBFD05FBABD978B /* libPods-FoxFixer-tvOSTests.a */; };
 		5FF89AFF39BB421788F58A46 /* Entypo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B1AAB655A64A4F30BABEF016 /* Entypo.ttf */; };
 		6774986718A24F56A1FF8E9F /* EvilIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B6DC78EC381148CCA36F771E /* EvilIcons.ttf */; };
-		484BD893CE2C4E8290871474 /* Feather.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1AD30D28201A4892B8EBF57C /* Feather.ttf */; };
-		3BCA399BF62D4E7492D11701 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B473D4B1C65240A0B7BE8FBF /* FontAwesome.ttf */; };
-		7C92D8DE3E9D44EBB1C52710 /* FontAwesome5_Brands.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B83DCBA973CE4BB3B2CE1042 /* FontAwesome5_Brands.ttf */; };
 		6C891D73A86F473ABCDED805 /* FontAwesome5_Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1CCF4192A9634DE3B808A621 /* FontAwesome5_Regular.ttf */; };
-		BBB64454A9EC4FE093F4C9AE /* FontAwesome5_Solid.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 906ACEE8784A4A0E95C9EF84 /* FontAwesome5_Solid.ttf */; };
-		15EAD25AE1A84DA28268C6C3 /* Foundation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 37D5F7E575D849D0B93259F7 /* Foundation.ttf */; };
-		EFAE51D39AE24A0B93F5DC7E /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 203727A76D224D1985577A34 /* Ionicons.ttf */; };
-		F89AB14C343A4983BE1FA89B /* MaterialCommunityIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CA8ED5F10CE74B2C8C602411 /* MaterialCommunityIcons.ttf */; };
-		8E715E945CD042D9A726F1B7 /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 02F858ABA70A465E9FF3896C /* MaterialIcons.ttf */; };
-		1BE826022BC649C49961E6B1 /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4AD7A8C04B4A463C90F70DD5 /* Octicons.ttf */; };
+		7C92D8DE3E9D44EBB1C52710 /* FontAwesome5_Brands.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B83DCBA973CE4BB3B2CE1042 /* FontAwesome5_Brands.ttf */; };
+		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		88F1DAAA4C4446138CA46B97 /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 01F4E3C935E34A74B8637E98 /* SimpleLineIcons.ttf */; };
+		8E715E945CD042D9A726F1B7 /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 02F858ABA70A465E9FF3896C /* MaterialIcons.ttf */; };
+		ABDF3C9BBF56446D97357636 /* AntDesign.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DDF8A4851CAE4FC5B127EAEC /* AntDesign.ttf */; };
+		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
+		BBB64454A9EC4FE093F4C9AE /* FontAwesome5_Solid.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 906ACEE8784A4A0E95C9EF84 /* FontAwesome5_Solid.ttf */; };
+		BDCA1EA4218C785300B84022 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BDCA1EA3218C785300B84022 /* GoogleService-Info.plist */; };
+		BDFFC4CB12ED4D4C964460CF /* libRNFirebase.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CFBAAE790E314E5F9A8AEF79 /* libRNFirebase.a */; };
+		CF35A31CB8D80B99628B2436 /* libPods-FoxFixer-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 66A764BCDCFDCD0F4B0C15DF /* libPods-FoxFixer-tvOS.a */; };
+		CF496FCEC9C3B049CD39EB14 /* libPods-FoxFixer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B9CC4F44BDD66D9FB6223A4 /* libPods-FoxFixer.a */; };
+		EF4BFC21219E39470022F44F /* libRNGoogleSignin.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EF4BFC20219E39360022F44F /* libRNGoogleSignin.a */; };
+		EFA6DE82219C3FED003D2830 /* libRNGeocoder.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EFA6DE81219C3FD7003D2830 /* libRNGeocoder.a */; };
+		EFAE51D39AE24A0B93F5DC7E /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 203727A76D224D1985577A34 /* Ionicons.ttf */; };
 		F6887B6026F84FC2986C2C4F /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 967929463545469B87862915 /* Zocial.ttf */; };
+		F89AB14C343A4983BE1FA89B /* MaterialCommunityIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CA8ED5F10CE74B2C8C602411 /* MaterialCommunityIcons.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,7 +103,7 @@
 			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
-			remoteInfo = ridex;
+			remoteInfo = FoxFixer;
 		};
 		139105C01AF99BAD00B5F7CC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -130,7 +131,7 @@
 			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 2D02E47A1E0B4A5D006451C7;
-			remoteInfo = "ridex-tvOS";
+			remoteInfo = "FoxFixer-tvOS";
 		};
 		2D16E6711FA4F8DC00B85C8A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -365,55 +366,55 @@
 		00C302BB1ABCB91800DB3ED1 /* RCTImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTImage.xcodeproj; path = "../node_modules/react-native/Libraries/Image/RCTImage.xcodeproj"; sourceTree = "<group>"; };
 		00C302D31ABCB9D200DB3ED1 /* RCTNetwork.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTNetwork.xcodeproj; path = "../node_modules/react-native/Libraries/Network/RCTNetwork.xcodeproj"; sourceTree = "<group>"; };
 		00C302DF1ABCB9EE00DB3ED1 /* RCTVibration.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTVibration.xcodeproj; path = "../node_modules/react-native/Libraries/Vibration/RCTVibration.xcodeproj"; sourceTree = "<group>"; };
-		00E356EE1AD99517003FC87E /* ridexTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ridexTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00E356EE1AD99517003FC87E /* FoxFixerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoxFixerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		00E356F21AD99517003FC87E /* ridexTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ridexTests.m; sourceTree = "<group>"; };
+		00E356F21AD99517003FC87E /* FoxFixerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FoxFixerTests.m; sourceTree = "<group>"; };
+		01F4E3C935E34A74B8637E98 /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = SimpleLineIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf"; sourceTree = "<group>"; };
+		02F858ABA70A465E9FF3896C /* MaterialIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf"; sourceTree = "<group>"; };
 		139105B61AF99BAD00B5F7CC /* RCTSettings.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTSettings.xcodeproj; path = "../node_modules/react-native/Libraries/Settings/RCTSettings.xcodeproj"; sourceTree = "<group>"; };
 		139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTWebSocket.xcodeproj; path = "../node_modules/react-native/Libraries/WebSocket/RCTWebSocket.xcodeproj"; sourceTree = "<group>"; };
-		13B07F961A680F5B00A75B9A /* ridex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ridex.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ridex/AppDelegate.h; sourceTree = "<group>"; };
-		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = ridex/AppDelegate.m; sourceTree = "<group>"; };
+		13B07F961A680F5B00A75B9A /* FoxFixer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoxFixer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = FoxFixer/AppDelegate.h; sourceTree = "<group>"; };
+		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = FoxFixer/AppDelegate.m; sourceTree = "<group>"; };
 		13B07FB21A68108700A75B9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ridex/Images.xcassets; sourceTree = "<group>"; };
-		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = ridex/Info.plist; sourceTree = "<group>"; };
-		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ridex/main.m; sourceTree = "<group>"; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = FoxFixer/Images.xcassets; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = FoxFixer/Info.plist; sourceTree = "<group>"; };
+		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = FoxFixer/main.m; sourceTree = "<group>"; };
 		146833FF1AC3E56700842450 /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "../node_modules/react-native/React/React.xcodeproj"; sourceTree = "<group>"; };
-		2D02E47B1E0B4A5D006451C7 /* ridex-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ridex-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2D02E4901E0B4A5D006451C7 /* ridex-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ridex-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1AD30D28201A4892B8EBF57C /* Feather.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Feather.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Feather.ttf"; sourceTree = "<group>"; };
+		1CCF4192A9634DE3B808A621 /* FontAwesome5_Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Regular.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Regular.ttf"; sourceTree = "<group>"; };
+		203727A76D224D1985577A34 /* Ionicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Ionicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf"; sourceTree = "<group>"; };
+		2D02E47B1E0B4A5D006451C7 /* FoxFixer-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FoxFixer-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D02E4901E0B4A5D006451C7 /* FoxFixer-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FoxFixer-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D16E6891FA4F8E400B85C8A /* libReact.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libReact.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		3DA99F66A5205FECDE81795D /* Pods-ridex-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ridex-tvOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ridex-tvOS/Pods-ridex-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
-		5093B32C3AA98493AB768BFC /* Pods-ridex-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ridex-tvOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-ridex-tvOS/Pods-ridex-tvOS.release.xcconfig"; sourceTree = "<group>"; };
-		54FB328BF41B3342C4BD5A15 /* Pods-ridex.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ridex.release.xcconfig"; path = "Pods/Target Support Files/Pods-ridex/Pods-ridex.release.xcconfig"; sourceTree = "<group>"; };
+		37D5F7E575D849D0B93259F7 /* Foundation.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Foundation.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Foundation.ttf"; sourceTree = "<group>"; };
+		3DA99F66A5205FECDE81795D /* Pods-FoxFixer-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoxFixer-tvOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FoxFixer-tvOS/Pods-FoxFixer-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
+		4AD7A8C04B4A463C90F70DD5 /* Octicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Octicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Octicons.ttf"; sourceTree = "<group>"; };
+		5093B32C3AA98493AB768BFC /* Pods-FoxFixer-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoxFixer-tvOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-FoxFixer-tvOS/Pods-FoxFixer-tvOS.release.xcconfig"; sourceTree = "<group>"; };
+		54FB328BF41B3342C4BD5A15 /* Pods-FoxFixer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoxFixer.release.xcconfig"; path = "Pods/Target Support Files/Pods-FoxFixer/Pods-FoxFixer.release.xcconfig"; sourceTree = "<group>"; };
 		5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAnimation.xcodeproj; path = "../node_modules/react-native/Libraries/NativeAnimation/RCTAnimation.xcodeproj"; sourceTree = "<group>"; };
-		65B74507184243DDE5CDED56 /* Pods-ridex.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ridex.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ridex/Pods-ridex.debug.xcconfig"; sourceTree = "<group>"; };
-		66A764BCDCFDCD0F4B0C15DF /* libPods-ridex-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ridex-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		65B74507184243DDE5CDED56 /* Pods-FoxFixer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoxFixer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FoxFixer/Pods-FoxFixer.debug.xcconfig"; sourceTree = "<group>"; };
+		66A764BCDCFDCD0F4B0C15DF /* libPods-FoxFixer-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FoxFixer-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
-		8B9CC4F44BDD66D9FB6223A4 /* libPods-ridex.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ridex.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B9CC4F44BDD66D9FB6223A4 /* libPods-FoxFixer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FoxFixer.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		906ACEE8784A4A0E95C9EF84 /* FontAwesome5_Solid.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Solid.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Solid.ttf"; sourceTree = "<group>"; };
+		967929463545469B87862915 /* Zocial.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Zocial.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Zocial.ttf"; sourceTree = "<group>"; };
 		ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTBlob.xcodeproj; path = "../node_modules/react-native/Libraries/Blob/RCTBlob.xcodeproj"; sourceTree = "<group>"; };
-		BDCA1EA3218C785300B84022 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "ridex/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B1AAB655A64A4F30BABEF016 /* Entypo.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Entypo.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Entypo.ttf"; sourceTree = "<group>"; };
+		B473D4B1C65240A0B7BE8FBF /* FontAwesome.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf"; sourceTree = "<group>"; };
+		B6DC78EC381148CCA36F771E /* EvilIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = EvilIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf"; sourceTree = "<group>"; };
+		B83DCBA973CE4BB3B2CE1042 /* FontAwesome5_Brands.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Brands.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Brands.ttf"; sourceTree = "<group>"; };
+		BDCA1EA3218C785300B84022 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "FoxFixer/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C07871596A3B4E07848EDA77 /* RNFirebase.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNFirebase.xcodeproj; path = "../node_modules/react-native-firebase/ios/RNFirebase.xcodeproj"; sourceTree = "<group>"; };
-		CA17623195B439697AD6E528 /* Pods-ridex-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ridex-tvOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ridex-tvOSTests/Pods-ridex-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		CA17623195B439697AD6E528 /* Pods-FoxFixer-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoxFixer-tvOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FoxFixer-tvOSTests/Pods-FoxFixer-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		CA8ED5F10CE74B2C8C602411 /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialCommunityIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf"; sourceTree = "<group>"; };
 		CFBAAE790E314E5F9A8AEF79 /* libRNFirebase.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNFirebase.a; sourceTree = "<group>"; };
-		DEAD2225213FA868D8191478 /* Pods-ridex-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ridex-tvOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ridex-tvOSTests/Pods-ridex-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
-		E94145E74BBFD05FBABD978B /* libPods-ridex-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ridex-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDF8A4851CAE4FC5B127EAEC /* AntDesign.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = AntDesign.ttf; path = "../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf"; sourceTree = "<group>"; };
+		DEAD2225213FA868D8191478 /* Pods-FoxFixer-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoxFixer-tvOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FoxFixer-tvOSTests/Pods-FoxFixer-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E94145E74BBFD05FBABD978B /* libPods-FoxFixer-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FoxFixer-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF4BFBF4219E39360022F44F /* RNGoogleSignin.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RNGoogleSignin.xcodeproj; path = "../node_modules/react-native-google-signin/ios/RNGoogleSignin.xcodeproj"; sourceTree = "<group>"; };
 		EFA6DE56219C3FD7003D2830 /* RNGeocoder.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RNGeocoder.xcodeproj; path = "../node_modules/react-native-geocoder-reborn/ios/RNGeocoder.xcodeproj"; sourceTree = "<group>"; };
-		DDF8A4851CAE4FC5B127EAEC /* AntDesign.ttf */ = {isa = PBXFileReference; name = "AntDesign.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		B1AAB655A64A4F30BABEF016 /* Entypo.ttf */ = {isa = PBXFileReference; name = "Entypo.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Entypo.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		B6DC78EC381148CCA36F771E /* EvilIcons.ttf */ = {isa = PBXFileReference; name = "EvilIcons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		1AD30D28201A4892B8EBF57C /* Feather.ttf */ = {isa = PBXFileReference; name = "Feather.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Feather.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		B473D4B1C65240A0B7BE8FBF /* FontAwesome.ttf */ = {isa = PBXFileReference; name = "FontAwesome.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		B83DCBA973CE4BB3B2CE1042 /* FontAwesome5_Brands.ttf */ = {isa = PBXFileReference; name = "FontAwesome5_Brands.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Brands.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		1CCF4192A9634DE3B808A621 /* FontAwesome5_Regular.ttf */ = {isa = PBXFileReference; name = "FontAwesome5_Regular.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		906ACEE8784A4A0E95C9EF84 /* FontAwesome5_Solid.ttf */ = {isa = PBXFileReference; name = "FontAwesome5_Solid.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Solid.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		37D5F7E575D849D0B93259F7 /* Foundation.ttf */ = {isa = PBXFileReference; name = "Foundation.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Foundation.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		203727A76D224D1985577A34 /* Ionicons.ttf */ = {isa = PBXFileReference; name = "Ionicons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		CA8ED5F10CE74B2C8C602411 /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; name = "MaterialCommunityIcons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		02F858ABA70A465E9FF3896C /* MaterialIcons.ttf */ = {isa = PBXFileReference; name = "MaterialIcons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		4AD7A8C04B4A463C90F70DD5 /* Octicons.ttf */ = {isa = PBXFileReference; name = "Octicons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Octicons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		01F4E3C935E34A74B8637E98 /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; name = "SimpleLineIcons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		967929463545469B87862915 /* Zocial.ttf */ = {isa = PBXFileReference; name = "Zocial.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Zocial.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -443,7 +444,7 @@
 				832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */,
 				00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */,
 				139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */,
-				CF496FCEC9C3B049CD39EB14 /* libPods-ridex.a in Frameworks */,
+				CF496FCEC9C3B049CD39EB14 /* libPods-FoxFixer.a in Frameworks */,
 				BDFFC4CB12ED4D4C964460CF /* libRNFirebase.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -460,7 +461,7 @@
 				2D02E4C61E0B4AEC006451C7 /* libRCTSettings-tvOS.a in Frameworks */,
 				2D02E4C71E0B4AEC006451C7 /* libRCTText-tvOS.a in Frameworks */,
 				2D02E4C81E0B4AEC006451C7 /* libRCTWebSocket-tvOS.a in Frameworks */,
-				CF35A31CB8D80B99628B2436 /* libPods-ridex-tvOS.a in Frameworks */,
+				CF35A31CB8D80B99628B2436 /* libPods-FoxFixer-tvOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -469,7 +470,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2DF0FFEE2056DD460020B375 /* libReact.a in Frameworks */,
-				5A3565EED1E9C0357D93F886 /* libPods-ridex-tvOSTests.a in Frameworks */,
+				5A3565EED1E9C0357D93F886 /* libPods-FoxFixer-tvOSTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -518,13 +519,13 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		00E356EF1AD99517003FC87E /* ridexTests */ = {
+		00E356EF1AD99517003FC87E /* FoxFixerTests */ = {
 			isa = PBXGroup;
 			children = (
-				00E356F21AD99517003FC87E /* ridexTests.m */,
+				00E356F21AD99517003FC87E /* FoxFixerTests.m */,
 				00E356F01AD99517003FC87E /* Supporting Files */,
 			);
-			path = ridexTests;
+			path = FoxFixerTests;
 			sourceTree = "<group>";
 		};
 		00E356F01AD99517003FC87E /* Supporting Files */ = {
@@ -555,7 +556,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		13B07FAE1A68108700A75B9A /* ridex */ = {
+		13B07FAE1A68108700A75B9A /* FoxFixer */ = {
 			isa = PBXGroup;
 			children = (
 				BDCA1EA3218C785300B84022 /* GoogleService-Info.plist */,
@@ -567,7 +568,7 @@
 				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
 				13B07FB71A68108700A75B9A /* main.m */,
 			);
-			name = ridex;
+			name = FoxFixer;
 			sourceTree = "<group>";
 		};
 		146834001AC3E56700842450 /* Products */ = {
@@ -596,12 +597,12 @@
 		162D727DFC3AA6DF9AD3FDD0 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				65B74507184243DDE5CDED56 /* Pods-ridex.debug.xcconfig */,
-				54FB328BF41B3342C4BD5A15 /* Pods-ridex.release.xcconfig */,
-				3DA99F66A5205FECDE81795D /* Pods-ridex-tvOS.debug.xcconfig */,
-				5093B32C3AA98493AB768BFC /* Pods-ridex-tvOS.release.xcconfig */,
-				DEAD2225213FA868D8191478 /* Pods-ridex-tvOSTests.debug.xcconfig */,
-				CA17623195B439697AD6E528 /* Pods-ridex-tvOSTests.release.xcconfig */,
+				65B74507184243DDE5CDED56 /* Pods-FoxFixer.debug.xcconfig */,
+				54FB328BF41B3342C4BD5A15 /* Pods-FoxFixer.release.xcconfig */,
+				3DA99F66A5205FECDE81795D /* Pods-FoxFixer-tvOS.debug.xcconfig */,
+				5093B32C3AA98493AB768BFC /* Pods-FoxFixer-tvOS.release.xcconfig */,
+				DEAD2225213FA868D8191478 /* Pods-FoxFixer-tvOSTests.debug.xcconfig */,
+				CA17623195B439697AD6E528 /* Pods-FoxFixer-tvOSTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -610,9 +611,9 @@
 			isa = PBXGroup;
 			children = (
 				2D16E6891FA4F8E400B85C8A /* libReact.a */,
-				8B9CC4F44BDD66D9FB6223A4 /* libPods-ridex.a */,
-				66A764BCDCFDCD0F4B0C15DF /* libPods-ridex-tvOS.a */,
-				E94145E74BBFD05FBABD978B /* libPods-ridex-tvOSTests.a */,
+				8B9CC4F44BDD66D9FB6223A4 /* libPods-FoxFixer.a */,
+				66A764BCDCFDCD0F4B0C15DF /* libPods-FoxFixer-tvOS.a */,
+				E94145E74BBFD05FBABD978B /* libPods-FoxFixer-tvOSTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -669,9 +670,9 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
-				13B07FAE1A68108700A75B9A /* ridex */,
+				13B07FAE1A68108700A75B9A /* FoxFixer */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
-				00E356EF1AD99517003FC87E /* ridexTests */,
+				00E356EF1AD99517003FC87E /* FoxFixerTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				162D727DFC3AA6DF9AD3FDD0 /* Pods */,
@@ -686,10 +687,10 @@
 		83CBBA001A601CBA00E9B192 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				13B07F961A680F5B00A75B9A /* ridex.app */,
-				00E356EE1AD99517003FC87E /* ridexTests.xctest */,
-				2D02E47B1E0B4A5D006451C7 /* ridex-tvOS.app */,
-				2D02E4901E0B4A5D006451C7 /* ridex-tvOSTests.xctest */,
+				13B07F961A680F5B00A75B9A /* FoxFixer.app */,
+				00E356EE1AD99517003FC87E /* FoxFixerTests.xctest */,
+				2D02E47B1E0B4A5D006451C7 /* FoxFixer-tvOS.app */,
+				2D02E4901E0B4A5D006451C7 /* FoxFixer-tvOSTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -719,24 +720,8 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		EF4BFBF5219E39360022F44F /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				EF4BFC20219E39360022F44F /* libRNGoogleSignin.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		EFA6DE57219C3FD7003D2830 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				EFA6DE81219C3FD7003D2830 /* libRNGeocoder.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		BF3E90D099A14EE6B5B9FFC0 /* Resources */ = {
-			isa = "PBXGroup";
+			isa = PBXGroup;
 			children = (
 				DDF8A4851CAE4FC5B127EAEC /* AntDesign.ttf */,
 				B1AAB655A64A4F30BABEF016 /* Entypo.ttf */,
@@ -756,14 +741,29 @@
 			);
 			name = Resources;
 			sourceTree = "<group>";
-			path = "";
+		};
+		EF4BFBF5219E39360022F44F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EF4BFC20219E39360022F44F /* libRNGoogleSignin.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EFA6DE57219C3FD7003D2830 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EFA6DE81219C3FD7003D2830 /* libRNGeocoder.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		00E356ED1AD99517003FC87E /* ridexTests */ = {
+		00E356ED1AD99517003FC87E /* FoxFixerTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "ridexTests" */;
+			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "FoxFixerTests" */;
 			buildPhases = (
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
@@ -774,14 +774,14 @@
 			dependencies = (
 				00E356F51AD99517003FC87E /* PBXTargetDependency */,
 			);
-			name = ridexTests;
-			productName = ridexTests;
-			productReference = 00E356EE1AD99517003FC87E /* ridexTests.xctest */;
+			name = FoxFixerTests;
+			productName = FoxFixerTests;
+			productReference = 00E356EE1AD99517003FC87E /* FoxFixerTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		13B07F861A680F5B00A75B9A /* ridex */ = {
+		13B07F861A680F5B00A75B9A /* FoxFixer */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "ridex" */;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "FoxFixer" */;
 			buildPhases = (
 				84FFAD27A70260109997222D /* [CP] Check Pods Manifest.lock */,
 				13B07F871A680F5B00A75B9A /* Sources */,
@@ -794,14 +794,14 @@
 			);
 			dependencies = (
 			);
-			name = ridex;
+			name = FoxFixer;
 			productName = "Hello World";
-			productReference = 13B07F961A680F5B00A75B9A /* ridex.app */;
+			productReference = 13B07F961A680F5B00A75B9A /* FoxFixer.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2D02E47A1E0B4A5D006451C7 /* ridex-tvOS */ = {
+		2D02E47A1E0B4A5D006451C7 /* FoxFixer-tvOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "ridex-tvOS" */;
+			buildConfigurationList = 2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "FoxFixer-tvOS" */;
 			buildPhases = (
 				0DEF4D84DDE3408C84470096 /* [CP] Check Pods Manifest.lock */,
 				2D02E4771E0B4A5D006451C7 /* Sources */,
@@ -813,14 +813,14 @@
 			);
 			dependencies = (
 			);
-			name = "ridex-tvOS";
-			productName = "ridex-tvOS";
-			productReference = 2D02E47B1E0B4A5D006451C7 /* ridex-tvOS.app */;
+			name = "FoxFixer-tvOS";
+			productName = "FoxFixer-tvOS";
+			productReference = 2D02E47B1E0B4A5D006451C7 /* FoxFixer-tvOS.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2D02E48F1E0B4A5D006451C7 /* ridex-tvOSTests */ = {
+		2D02E48F1E0B4A5D006451C7 /* FoxFixer-tvOSTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "ridex-tvOSTests" */;
+			buildConfigurationList = 2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "FoxFixer-tvOSTests" */;
 			buildPhases = (
 				C62D017C20B622DD2EBF144F /* [CP] Check Pods Manifest.lock */,
 				2D02E48C1E0B4A5D006451C7 /* Sources */,
@@ -832,9 +832,9 @@
 			dependencies = (
 				2D02E4921E0B4A5D006451C7 /* PBXTargetDependency */,
 			);
-			name = "ridex-tvOSTests";
-			productName = "ridex-tvOSTests";
-			productReference = 2D02E4901E0B4A5D006451C7 /* ridex-tvOSTests.xctest */;
+			name = "FoxFixer-tvOSTests";
+			productName = "FoxFixer-tvOSTests";
+			productReference = 2D02E4901E0B4A5D006451C7 /* FoxFixer-tvOSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -864,7 +864,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "ridex" */;
+			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "FoxFixer" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -939,10 +939,10 @@
 			);
 			projectRoot = "";
 			targets = (
-				13B07F861A680F5B00A75B9A /* ridex */,
-				00E356ED1AD99517003FC87E /* ridexTests */,
-				2D02E47A1E0B4A5D006451C7 /* ridex-tvOS */,
-				2D02E48F1E0B4A5D006451C7 /* ridex-tvOSTests */,
+				13B07F861A680F5B00A75B9A /* FoxFixer */,
+				00E356ED1AD99517003FC87E /* FoxFixerTests */,
+				2D02E47A1E0B4A5D006451C7 /* FoxFixer-tvOS */,
+				2D02E48F1E0B4A5D006451C7 /* FoxFixer-tvOSTests */,
 			);
 		};
 /* End PBXProject section */
@@ -1306,7 +1306,7 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-ridex-tvOS-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-FoxFixer-tvOS-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1338,7 +1338,7 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-ridex-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-FoxFixer-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1351,7 +1351,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-ridex/Pods-ridex-resources.sh",
+				"${SRCROOT}/Pods/Target Support Files/Pods-FoxFixer/Pods-FoxFixer-resources.sh",
 				"${PODS_ROOT}/GTMOAuth2/Source/Touch/GTMOAuth2ViewTouch.xib",
 				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
 				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
@@ -1394,7 +1394,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ridex/Pods-ridex-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FoxFixer/Pods-FoxFixer-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		C62D017C20B622DD2EBF144F /* [CP] Check Pods Manifest.lock */ = {
@@ -1408,7 +1408,7 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-ridex-tvOSTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-FoxFixer-tvOSTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1422,7 +1422,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00E356F31AD99517003FC87E /* ridexTests.m in Sources */,
+				00E356F31AD99517003FC87E /* FoxFixerTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1448,7 +1448,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2DCD954D1E0B4F2C00145EB5 /* ridexTests.m in Sources */,
+				2DCD954D1E0B4F2C00145EB5 /* FoxFixerTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1457,12 +1457,12 @@
 /* Begin PBXTargetDependency section */
 		00E356F51AD99517003FC87E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 13B07F861A680F5B00A75B9A /* ridex */;
+			target = 13B07F861A680F5B00A75B9A /* FoxFixer */;
 			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
 		};
 		2D02E4921E0B4A5D006451C7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2D02E47A1E0B4A5D006451C7 /* ridex-tvOS */;
+			target = 2D02E47A1E0B4A5D006451C7 /* FoxFixer-tvOS */;
 			targetProxy = 2D02E4911E0B4A5D006451C7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -1474,7 +1474,7 @@
 				13B07FB21A68108700A75B9A /* Base */,
 			);
 			name = LaunchScreen.xib;
-			path = ridex;
+			path = FoxFixer;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -1492,7 +1492,7 @@
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-firebase/ios/RNFirebase/**",
 				);
-				INFOPLIST_FILE = ridexTests/Info.plist;
+				INFOPLIST_FILE = FoxFixerTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
@@ -1505,7 +1505,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ridex.app/ridex";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FoxFixer.app/FoxFixer";
 			};
 			name = Debug;
 		};
@@ -1518,7 +1518,7 @@
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-firebase/ios/RNFirebase/**",
 				);
-				INFOPLIST_FILE = ridexTests/Info.plist;
+				INFOPLIST_FILE = FoxFixerTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
@@ -1531,13 +1531,13 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ridex.app/ridex";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FoxFixer.app/FoxFixer";
 			};
 			name = Release;
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 65B74507184243DDE5CDED56 /* Pods-ridex.debug.xcconfig */;
+			baseConfigurationReference = 65B74507184243DDE5CDED56 /* Pods-FoxFixer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
@@ -1547,22 +1547,22 @@
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-firebase/ios/RNFirebase/**",
 				);
-				INFOPLIST_FILE = ridex/Info.plist;
+				INFOPLIST_FILE = FoxFixer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ridex;
-				PRODUCT_NAME = ridex;
+				PRODUCT_BUNDLE_IDENTIFIER = com.foxfixer.app;
+				PRODUCT_NAME = FoxFixer;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 54FB328BF41B3342C4BD5A15 /* Pods-ridex.release.xcconfig */;
+			baseConfigurationReference = 54FB328BF41B3342C4BD5A15 /* Pods-FoxFixer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
@@ -1571,22 +1571,22 @@
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-firebase/ios/RNFirebase/**",
 				);
-				INFOPLIST_FILE = ridex/Info.plist;
+				INFOPLIST_FILE = FoxFixer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ridex;
-				PRODUCT_NAME = ridex;
+				PRODUCT_BUNDLE_IDENTIFIER = com.foxfixer.app;
+				PRODUCT_NAME = FoxFixer;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
 		};
 		2D02E4971E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3DA99F66A5205FECDE81795D /* Pods-ridex-tvOS.debug.xcconfig */;
+			baseConfigurationReference = 3DA99F66A5205FECDE81795D /* Pods-FoxFixer-tvOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -1601,7 +1601,7 @@
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-firebase/ios/RNFirebase/**",
 				);
-				INFOPLIST_FILE = "ridex-tvOS/Info.plist";
+				INFOPLIST_FILE = "FoxFixer-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1611,7 +1611,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.ridex-tvOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.FoxFixer-tvOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
@@ -1621,7 +1621,7 @@
 		};
 		2D02E4981E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5093B32C3AA98493AB768BFC /* Pods-ridex-tvOS.release.xcconfig */;
+			baseConfigurationReference = 5093B32C3AA98493AB768BFC /* Pods-FoxFixer-tvOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -1636,7 +1636,7 @@
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-firebase/ios/RNFirebase/**",
 				);
-				INFOPLIST_FILE = "ridex-tvOS/Info.plist";
+				INFOPLIST_FILE = "FoxFixer-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1646,7 +1646,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.ridex-tvOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.FoxFixer-tvOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
@@ -1656,7 +1656,7 @@
 		};
 		2D02E4991E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DEAD2225213FA868D8191478 /* Pods-ridex-tvOSTests.debug.xcconfig */;
+			baseConfigurationReference = DEAD2225213FA868D8191478 /* Pods-FoxFixer-tvOSTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -1670,7 +1670,7 @@
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-firebase/ios/RNFirebase/**",
 				);
-				INFOPLIST_FILE = "ridex-tvOSTests/Info.plist";
+				INFOPLIST_FILE = "FoxFixer-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1680,17 +1680,17 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.ridex-tvOSTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.FoxFixer-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ridex-tvOS.app/ridex-tvOS";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FoxFixer-tvOS.app/FoxFixer-tvOS";
 				TVOS_DEPLOYMENT_TARGET = 10.1;
 			};
 			name = Debug;
 		};
 		2D02E49A1E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CA17623195B439697AD6E528 /* Pods-ridex-tvOSTests.release.xcconfig */;
+			baseConfigurationReference = CA17623195B439697AD6E528 /* Pods-FoxFixer-tvOSTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -1704,7 +1704,7 @@
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-firebase/ios/RNFirebase/**",
 				);
-				INFOPLIST_FILE = "ridex-tvOSTests/Info.plist";
+				INFOPLIST_FILE = "FoxFixer-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1714,10 +1714,10 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.ridex-tvOSTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.FoxFixer-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ridex-tvOS.app/ridex-tvOS";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FoxFixer-tvOS.app/FoxFixer-tvOS";
 				TVOS_DEPLOYMENT_TARGET = 10.1;
 			};
 			name = Release;
@@ -1824,7 +1824,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "ridexTests" */ = {
+		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "FoxFixerTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				00E356F61AD99517003FC87E /* Debug */,
@@ -1833,7 +1833,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "ridex" */ = {
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "FoxFixer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				13B07F941A680F5B00A75B9A /* Debug */,
@@ -1842,7 +1842,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "ridex-tvOS" */ = {
+		2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "FoxFixer-tvOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2D02E4971E0B4A5E006451C7 /* Debug */,
@@ -1851,7 +1851,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "ridex-tvOSTests" */ = {
+		2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "FoxFixer-tvOSTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2D02E4991E0B4A5E006451C7 /* Debug */,
@@ -1860,7 +1860,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "ridex" */ = {
+		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "FoxFixer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				83CBBA201A601CBA00E9B192 /* Debug */,
