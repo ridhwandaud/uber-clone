@@ -27,16 +27,6 @@ class SignupScreen extends Component {
 			Alert.alert(error.code);
 		});
 
-		console.log('email: ' + email + ' password: ' + password );
-
-		firebase.auth().signInAnonymously()
-		  .then(({ user }) => {
-		    console.log(user.isAnonymous);
-		    console.log('user',user);
-		    this.props.navigation.navigate('App');
-  		});
-		
-		console.log('login');
 	}
 
 	render(){
@@ -87,9 +77,16 @@ class SignupScreen extends Component {
 							style={styles.login}
 							onPress={() => this.login()}
 						>
-							<Text style={styles.loginText}>
-								Log In
-							</Text>
+						{
+								LoginReducer.isLoading ?
+
+								<ActivityIndicator size="small" color="white" />
+
+								:
+								<Text style={styles.loginText}>
+									Sign Up
+								</Text>
+						}
 						</TouchableOpacity>
 					</View>
 					<TouchableOpacity
