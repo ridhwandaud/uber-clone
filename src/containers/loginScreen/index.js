@@ -73,7 +73,7 @@ class LoginScreen extends Component {
 			<KeyboardAvoidingView style={{ flex: 1, backgroundColor: 'white' }}>
 				<ScrollView style={{ padding: 20, flex: 1, marginBottom: 20 }}>
 					<Image
-			          source={require('../../images/logo.png')}
+			          source={require('../../images/login.png')}
 			          style={styles.logo}
 			        />
 			        <View style={{ paddingTop: 32, alignItems: 'center' }}>
@@ -126,7 +126,7 @@ class LoginScreen extends Component {
 						<GoogleSigninButton
 						    style={{ width: 312, height: 48 }}
 						    size={GoogleSigninButton.Size.Wide}
-						    color={GoogleSigninButton.Color.Dark}
+						    color={GoogleSigninButton.Color.White}
 						    onPress={this._signInGoogle}
 						    disabled={this.state.isSigninInProgress} 
 						/>
@@ -167,11 +167,18 @@ const styles = StyleSheet.create({
     },
     login: {
     	paddingVertical: 10,
-    	backgroundColor: '#3277D8',
-    	borderColor: '#3277D8',
+    	backgroundColor: '#f7c818',
+    	borderColor: '#f7c818',
     	borderRadius: 2,
     	width: 305,
     	alignSelf: 'center',
+    	shadowColor: '#000000',
+	    shadowOffset: {
+	      width: 0,
+	      height: 3
+	    },
+	    shadowRadius: 3,
+	    shadowOpacity: 0.3
     },
     loginText: {
     	textAlign: 'center',
