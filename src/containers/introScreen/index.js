@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Alert, View, Text } from 'react-native';
+import { Alert, View, Text, StatusBar } from 'react-native';
 import AppIntro from 'react-native-app-intro';
 
 class Intro extends Component {
@@ -59,17 +59,19 @@ class Intro extends Component {
       level: 10,
     }];
     return (
-      <AppIntro
-        onNextBtnClick={this.nextBtnHandle}
-        onDoneBtnClick={this.doneBtnHandle}
-        onSkipBtnClick={this.onSkipBtnHandle}
-        onSlideChange={this.onSlideChangeHandle}
-        pageArray={pageArray}
-        dotColor="grey"
-        activeDotColor="#000"
-        leftTextColor="#000"
-        rightTextColor="#000"
-      />
+      <View style={{ flex: 1 }}>
+        <AppIntro
+          onNextBtnClick={this.nextBtnHandle}
+          onDoneBtnClick={this.doneBtnHandle}
+          onSkipBtnClick={this.onSkipBtnHandle}
+          onSlideChange={this.onSlideChangeHandle}
+          pageArray={pageArray}
+          dotColor="grey"
+          activeDotColor="#000"
+          leftTextColor="#000"
+          rightTextColor="#000"
+        />
+      </View>
     );
   }
 }

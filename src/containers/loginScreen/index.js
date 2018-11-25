@@ -68,7 +68,10 @@ class LoginScreen extends Component {
 
 	render(){
 		const { LoginReducer, loginActionsCreator } = this.props;
+		const { email, password } = this.state;
 		console.log('LoginReducer', LoginReducer);
+		const valid = email !== '' && password !== '';
+		console.log('valid', valid);
 		return(
 			<KeyboardAvoidingView style={{ flex: 1, backgroundColor: 'white' }}>
 				<ScrollView style={{ padding: 20, flex: 1, marginBottom: 20 }}>
@@ -107,6 +110,7 @@ class LoginScreen extends Component {
 						<TouchableOpacity
 							style={styles.login}
 							onPress={() => this.login()}
+							disabled={!valid}
 						>	
 							{
 								LoginReducer.isLoading ?

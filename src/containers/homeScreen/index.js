@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, Text, TouchableOpacity, StyleSheet, Dimensions, Platform, Button, Alert } from 'react-native';
+import { View, Text, TouchableOpacity, StyleSheet, Dimensions, Platform, Button, Alert, StatusBar } from 'react-native';
 import { connect } from 'react-redux';
 import loginActions from 'actions/loginActions';
 import locationActions from 'actions/locationActions';
