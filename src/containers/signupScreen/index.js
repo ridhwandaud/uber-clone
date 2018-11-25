@@ -40,7 +40,7 @@ class SignupScreen extends Component {
 				        	Welcome Aboard!
 				        </Text>
 				        <Text style={styles.subTitle}>
-				        	Signup with Ridex in simple steps
+				        	Signup with Fox Fixer in simple steps
 				        </Text>
 			        </View>
 			        <TextInput 

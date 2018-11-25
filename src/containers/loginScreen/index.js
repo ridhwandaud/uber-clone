@@ -81,7 +81,7 @@ class LoginScreen extends Component {
 				        	Welcome Back!
 				        </Text>
 				        <Text style={styles.subTitle}>
-				        	Login to continue using Ridex
+				        	Login to continue using Fox Fixer
 				        </Text>
 			        </View>
 					<TextInput 
