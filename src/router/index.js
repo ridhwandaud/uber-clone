@@ -8,8 +8,9 @@ import OtherScreen from 'containers/homeScreen/other';
 import DestinationScreen from 'containers/destinationScreen';
 import ProfileScreen from 'containers/profileScreen';
 import PickupScreen from 'containers/pickupScreen';
+import IntroScreen from 'containers/introScreen';
 
-const AuthStack = createStackNavigator({ Login: LoginScreen, Signup: SignupScreen });
+const AuthStack = createStackNavigator({ Intro: IntroScreen, Login: LoginScreen, Signup: SignupScreen });
 
 const HomeStack = createStackNavigator({ Home: HomeScreen, Destination: DestinationScreen, Pickup: PickupScreen });
 

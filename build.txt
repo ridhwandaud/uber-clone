@@ -1,0 +1,7 @@
+// Todo do for build
+
+
+/*** Fixed app intro **/
+https://github.com/FuYaoDe/react-native-app-intro/pull/113/commits/6f0e9494aad0da6555111c172ed22d2a1ffe94ec
+
+
