@@ -25,9 +25,9 @@ class Intro extends Component {
   }
   render() {
     const pageArray = [{
-      title: 'Lets get started',
-      description: 'Sign in to get quick, safe and reliable assistance. ',
-      img: require('../../images/booking.png'),
+      title: 'Quick, Fast and Reliable',
+      description: 'Find assistance with a simple taps.',
+      img: require('../../images/fast.png'),
       imgStyle: {
         height: 80 * 2.5,
         width: 109 * 2.5,
@@ -36,8 +36,8 @@ class Intro extends Component {
       fontColor: '#000',
       level: 10,
     }, {
-      title: 'Pay with cash',
-      description: 'Pay after the job is done',
+      title: 'All pricing are transparent',
+      description: 'No hidden and overcharge anymore',
       img: require('../../images/wallet.png'),
       imgStyle: {
         height: 93 * 2.5,
@@ -47,9 +47,9 @@ class Intro extends Component {
       fontColor: '#000',
       level: 10,
     }, {
-      title: 'No more list',
-      description: 'Relax and just wait for our team to do it for you',
-      img: require('../../images/todo.png'),
+      title: 'Expertise assistance',
+      description: 'We will match you with the best available assistance nearby.',
+      img: require('../../images/search.png'),
       imgStyle: {
         height: 93 * 2.5,
         width: 103 * 2.5,
